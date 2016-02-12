@@ -1,0 +1,111 @@
+doctype html
+html(lang="en" xmlns="http://www.w3.org/1999/xhtml")
+  head
+    meta(http-equiv="Content-Type" content="text/html; charset=utf-8")
+    <!--[if !mso]><!-->
+    meta(http-equiv="X-UA-Compatible" content="IE=edge")
+    <!--<![endif]-->
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    title= pageTitle
+    link(rel="stylesheet" type="text/css" href="styles.css")
+    <!--[if (gte mso 9)|(IE)]>
+    <style type="text/css">table {border-collapse: collapse;}</style>
+    <![endif]-->
+  body
+    
+    - var headerSource = "image/header.jpg"
+    - var subHeaderText = "I am the opening text header"
+    - var openingText = "I am the opening text body"
+    - var Image01 = "img/doggy.jpg"
+    - var twoColumnText = "I am the two column text"
+    - var threeColumnText = "I am the three column text"
+    
+    style(type="text/css" media="screen") 
+      include style.css
+  
+    include openingTags.jade
+          include header.jade
+          tr
+            td.inner.contents
+              p.h1 #{subHeaderText}
+              p #{openingText}
+          tr
+            td.two-column
+              <!--[if (gte mso 9)|(IE)]>
+              <table width="100%">
+              <tr>
+              <td width="50%" valign="top">
+              <![endif]-->
+              div.column
+                table(width='100%')
+                  tr
+                    td.inner
+                      table.contents
+                        tr
+                          td
+                            img(src="#{Image01}" width='600' alt='image')
+                        tr
+                          td.text #{twoColumnText}
+              <!--[if (gte mso 9)|(IE)]>
+              </td><td width="50%" valign="top">
+              <![endif]-->
+              div.column
+                table(width='100%')
+                  tr
+                    td.inner
+                      table.contents
+                        tr
+                          td
+                            img(src="#{Image01}" width='600' alt='image')
+                        tr
+                          td.text #{twoColumnText}
+              <!--[if (gte mso 9)|(IE)]>
+              </td>
+              </tr>
+              </table>
+              <![endif]-->
+          tr
+            td.three-column
+              <!--[if (gte mso 9)|(IE)]>
+              <table width="100%">
+              <tr>
+              <td width="200" valign="top">
+              <![endif]-->
+              table.column
+                tr
+                  td.inner
+                    table.contents
+                      tr
+                        td
+                          img(src="#{Image01}" width="180" alt="image")
+                      tr
+                        td.text #{threeColumnText}
+              <!--[if (gte mso 9)|(IE)]>
+              </td><td width="200" valign="top">
+              <![endif]-->
+              table.column
+                tr
+                  td.inner
+                    table.contents
+                      tr
+                        td
+                          img(src="#{Image01}" width="180" alt="image")
+                      tr
+                        td.text #{threeColumnText}
+              <!--[if (gte mso 9)|(IE)]>
+              </td><td width="200" valign="top">
+              <![endif]-->
+              table.column
+                tr
+                  td.inner
+                    table.contents
+                      tr
+                        td
+                          img(src="#{Image01}" width="180" alt="image")
+                      tr
+                        td.text #{threeColumnText}
+              <!--[if (gte mso 9)|(IE)]>
+              </td>
+              </tr>
+              </table>
+              <![endif]-->

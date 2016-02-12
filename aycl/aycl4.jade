@@ -1,0 +1,217 @@
+doctype html
+html(lang="en")
+  head
+    title= pageTitle
+    script(type='text/javascript')
+    style 
+      include aycl4.css
+  //- IF BUTTTON IS BLUE, CHANGE CLASS TO a.watch-blue AND  td.text.button-blue  
+      
+  body
+  - var nested = "Discover 246 UX Recordings in the All You Can Learn Library. "
+  - var openPara = 
+  
+  //-section1 top left [tl]
+  - var tlTopic = "From UI20 Conference"
+  - var tlTopicLink = "http://aycl.uie.com/events/ui_20"
+  - var tlTitle = "Customer Journey Mapping and CX&nbsp;Research"
+  - var tlLink = "http://aycl.uie.com/virtual_seminars/customer_journey_mapping_and_cx_research"
+  - var tlSpeaker = "Marc Stickdorn"
+  - var tlImage = "http://asset.uie.com/img/AYCL/02_08_16/stickdorn.png"
+  
+  //-section2 top right [tr]
+  - var trTopic = "From UI18 Conference"
+  - var trTopicLink = "http://aycl.uie.com/events/ui_18"
+  - var trTitle = "Get More From User Research"
+  - var trLink = "http://aycl.uie.com/virtual_seminars/get_more_from_user_research"
+  - var trSpeaker = "Kim Goodwin"
+  - var trImage = "http://asset.uie.com/img/AYCL/02_08_16/goodwin.png"
+  
+  //-section3 bottom left [bl]
+  - var blTopic = "Experience Design Strategy"
+  - var blTopicLink = "http://aycl.uie.com/virtual_seminars/category/experience_design_strategy"
+  - var blTitle = "Building a Winning UX Strategy Using the Kano&nbsp;Model"
+  - var blLink = "http://aycl.uie.com/virtual_seminars/building_a_winning_ux_strategy_using_the_kano_model"
+  - var blSpeaker = "Jared Spool"
+  - var blImage = "http://asset.uie.com/img/AYCL/02_08_16/spool.png"
+  
+  //-section3 bottom right [br]
+  - var brTopic = "Design Decisions"
+  - var brTopicLink = "http://aycl.uie.com/virtual_seminars/topic/design_decisions"
+  - var brTitle = "Measuring The Customer Experience Using Top&nbsp;Tasks"
+  - var brLink = "http://aycl.uie.com/virtual_seminars/top_tasks"
+  - var brSpeaker = "Gerry McGovern"
+  - var brImage = "http://asset.uie.com/img/AYCL/02_08_16/mcgovern.png"
+  
+    //- opener
+    center.wrapper
+      div.webkit
+        <!--[if (gte mso 9)|(IE)]>
+        <table width="600" align="center">
+        <tr>
+        <td>
+        <![endif]-->
+        table.outer(align='center')
+          //- nested
+          tr
+            *|IFNOT:ARCHIVE_PAGE|*
+            td.two-column
+              <!--[if (gte mso 9)|(IE)]>
+              <table width="100%">
+              <tr>
+              <td width="50%" valign="top">
+              <![endif]-->
+              div.column-nest
+                table(width="100%")
+                  tr
+                    td.inner-nest  
+                      table.contents-nest
+                        tr
+                          td.text
+                            p.nested #{nested}
+              <!--[if (gte mso 9)|(IE)]>
+              </td><td width="50%" valign="top">
+              <![endif]-->
+              div.column-view
+                table(width="100%")
+                  tr
+                    td.inner-nest
+                      table.contents-nest-view
+                        tr
+                          td.text
+                            p.nested Trouble viewing?
+                              a.view-browser(href="*|ARCHIVE|*") &nbsp;View in Browser
+              <!--[if (gte mso 9)|(IE)]>
+              </td>
+              </tr>
+              </table>
+              <![endif]-->
+            *|END:IF|*
+            
+          tr
+            td
+              table.outer(align="center")
+                tr
+                  td.full-width-image
+                    img(src="http://asset.uie.com/AYCL/img/all-you-can-learn-library.png" width="300" alt="All You Can Learn Library")
+          tr
+            td.one-column
+              table(width="100%")
+                tr
+                  td.inner.contents
+                    p.opener 
+                      | In the 
+                      | <a href=http://aycl.uie.com/>All You Can Learn Library</a>, 
+                      | there are currently 246 UX presentations for you to access. Here are some popular seminars addressing relevant and timely topics for your team.
+          tr
+            td.two-column
+              <!--[if (gte mso 9)|(IE)]>
+              <table width="100%">
+              <tr>
+              <td width="50%" valign="top">
+              <![endif]-->
+              div.column
+                table(width="100%")
+                  tr
+                    td.inner
+                      table.contents
+                        tr
+                          td.text
+                            a.topic(href="#{tlTopicLink}") #{tlTopic}
+                            br
+                            a(href="#{tlLink}") #{tlTitle}
+                            br
+                            p #{tlSpeaker}
+                        tr
+                          td
+                            a(href="#{tlLink}")
+                              img(src="#{tlImage}" width="280" alt="Screenshot of #{tlSpeaker}'s #{tlTitle}")
+                        tr
+                          td
+                            br
+                        tr
+                          td.text.button-red
+                            a.watch-red(href="#{tlLink}/#signin") Watch this Now
+              <!--[if (gte mso 9)|(IE)]>
+              </td><td width="50%" valign="top">
+              <![endif]-->
+              div.column
+                table(width="100%")
+                  tr
+                    td.inner
+                      table.contents
+                        tr
+                          td.text
+                            a.topic(href="#{trTopicLink}") #{trTopic}
+                            br
+                            a(href="#{trLink}") #{trTitle}
+                            br
+                            p #{trSpeaker}
+                        tr
+                          td
+                            a(href="#{trLink}")
+                              img(src="#{trImage}" width="280" alt="Screenshot of #{trSpeaker}'s #{trTitle}")
+                        tr
+                          td
+                            br
+                        tr
+                          td.text.button-red
+                            a.watch-red(href="#{trLink}/#signin") Watch this Now
+              <!--[if (gte mso 9)|(IE)]>
+              </td><td width="50%" valign="top">
+              <![endif]-->
+              div.column
+                table(width="100%")
+                  tr
+                    td.inner
+                      table.contents
+                        tr
+                          td.text
+                            a.topic(href="#{blTopicLink}") #{blTopic}
+                            br
+                            a(href="#{blLink}") #{blTitle}
+                            br
+                            p #{blSpeaker}
+                        tr
+                          td
+                            a(href="#{blLink}")
+                              img(src="#{blImage}" width="280" alt="Screenshot of #{blSpeaker}'s #{blTitle}")
+                        tr
+                          td
+                            br
+                        tr
+                          td.text.button-red
+                            a.watch-red(href="#{blLink}/#signin") Watch this Now
+              <!--[if (gte mso 9)|(IE)]>
+              </td><td width="50%" valign="top">
+              <![endif]-->
+              div.column
+                table(width="100%")
+                  tr
+                    td.inner
+                      table.contents
+                        tr
+                          td.text
+                            a.topic(href="#{brTopicLink}") #{brTopic}
+                            br
+                            a(href="#{brLink}") #{brTitle}
+                            br
+                            p #{brSpeaker}
+                        tr
+                          td
+                            a(href="#{brLink}")
+                              img(src="#{brImage}" width="280" alt="Screenshot of #{brSpeaker}'s #{brTitle}")
+                        tr
+                          td
+                            br
+                        tr
+                          td.text.button-red
+                            a.watch-red(href="#{brLink}/#signin") Watch this Now
+              <!--[if (gte mso 9)|(IE)]>
+              </td>
+              </tr>
+              </table>
+              <![endif]-->
+          
+          include footer.jade
+            

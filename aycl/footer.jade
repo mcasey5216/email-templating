@@ -1,0 +1,61 @@
+tr
+  td.one-column-foot
+    table(width="100%")
+      tr
+        td.inner.contents.foot
+          p.footer Copyright © *|CURRENT_YEAR|*, #[a(href="http://www.uie.com") User Interface Engineering]. All Rights Reserved.
+tr
+  td.three-column
+    <!--[if (gte mso 9)|(IE)]>
+    <table width="100%">
+    <tr>
+    <td width="200" valign="top">
+    <![endif]-->
+    table.column
+      tr
+        td.inner
+          table.contents
+            tr
+              td.text 510 Turnpike St., Suite 102 <br> North Andover, MA 01845
+    <!--[if (gte mso 9)|(IE)]>
+    </td><td width="200" valign="top">
+    <![endif]-->
+    table.column
+      tr
+        td.inner
+          table.contents
+            tr
+              td.text 1.800.588.9855 <br> (within the U.S. and Canada) <br> or +1.978.327.5561
+    <!--[if (gte mso 9)|(IE)]>
+    </td><td width="200" valign="top">
+    <![endif]-->
+    table.column
+      tr
+        td.inner
+          table.contents
+            tr
+              td.text Questions or comments? <br> Please send e-mail to <br> <a href="mailto:events@uie.com">events@uie.com</a>
+    <!--[if (gte mso 9)|(IE)]>
+    </td>
+    </tr>
+    </table>
+    <![endif]-->
+tr
+  *|IFNOT:ARCHIVE_PAGE|*
+  td.one-column
+    table(width="100%")
+      tr
+        td.inner.contents
+          p.footer 
+            | Sent to *|EMAIL|* &mdash;
+            | <a href="*|ABOUT_LIST|*"><em>why did I get this?</em></a>
+            | |
+            | <a href="*|UPDATE_PROFILE|*">update subscription preferences</a>
+            | |
+            | <a href="*|UNSUB|*">unsubscribe&nbsp;from&nbsp;this&nbsp;list</a>
+  *|END:IF|*
+<!--[if (gte mso 9)|(IE)]>
+</td>
+</tr>
+</table>
+<![endif]-->
