@@ -1,0 +1,85 @@
+- var fourColumnSource1  = ""
+- var fourColumnText1    = ""
+- var fourColumnHeader1  = ""
+- var fourColumnAltText1 = ""
+
+- var fourColumnSource2  = ""
+- var fourColumnText2    = ""
+- var fourColumnHeader2  = ""
+- var fourColumnAltText2 = ""
+
+- var fourColumnSource3  = ""
+- var fourColumnText3    = ""
+- var fourColumnHeader3  = ""
+- var fourColumnAltText3 = ""
+
+- var fourColumnSource4  = ""
+- var fourColumnText4    = ""
+- var fourColumnHeader4  = ""
+- var fourColumnAltText4 = ""
+
+tr
+  td.four-column
+    <!--[if (gte mso 9)|(IE)]>
+    <table width="100%">
+    <tr>
+    <td width="150" valign="top">
+    <![endif]-->
+    table.column
+      tr
+        td.inner
+          table.contents
+            tr
+              td
+                img(src="#{fourColumnSource1}" width="130" alt="#{fourColumnAltText1}")
+            tr
+              td.text 
+              p.h2 #{fourColumnHeader1}
+              span #{fourColumnText1}
+    <!--[if (gte mso 9)|(IE)]>
+    </td><td width="150" valign="top">
+    <![endif]-->
+    table.column
+      tr
+        td.inner
+          table.contents
+            tr
+              td
+                img(src="#{fourColumnSource2}" width="130" alt="#{fourColumnAltText2}")
+            tr
+              td.text 
+              p.h2 #{fourColumnHeader2}
+              span #{fourColumnText2}
+    <!--[if (gte mso 9)|(IE)]>
+    </td><td width="150" valign="top">
+    <![endif]-->
+    table.column
+      tr
+        td.inner
+          table.contents
+            tr
+              td
+                img(src="#{fourColumnSource3}" width="130" alt="#{fourColumnAltText3}")
+            tr
+              td.text 
+              p.h2 #{fourColumnHeader3}
+              span #{fourColumnText3}
+    <!--[if (gte mso 9)|(IE)]>
+    </td><td width="150" valign="top">
+    <![endif]-->
+    table.column
+      tr
+        td.inner
+          table.contents
+            tr
+              td
+                img(src="#{fourColumnSource4}" width="130" alt="#{fourColumnAltText4}")
+            tr
+              td.text 
+              p.h2 #{fourColumnHeader4}
+              span #{fourColumnText4}
+    <!--[if (gte mso 9)|(IE)]>
+    </td>
+    </tr>
+    </table>
+    <![endif]-->

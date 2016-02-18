@@ -1,0 +1,49 @@
+- var twoColumnSource1  = ""
+- var twoColumnText1    = ""
+- var twoColumnHeader1  = ""
+- var twoColumnAltText1 = ""
+
+- var twoColumnSource2  = ""
+- var twoColumnText2    = ""
+- var twoColumnHeader2  = ""
+- var twoColumnAltText2 = ""
+
+tr
+  td.two-column
+    <!--[if (gte mso 9)|(IE)]>
+    <table width="100%">
+    <tr>
+    <td width="50%" valign="top">
+    <![endif]-->
+    div.column
+      table(width='100%')
+        tr
+          td.inner
+            table.contents
+              tr
+                td
+                  img(src="#{twoColumnSource1}" width='280' alt="#{twoColumnAltText1}")
+              tr
+                td.text 
+                  p.h2 #{twoColumnHeader1}
+                  span #{twoColumnText1}
+    <!--[if (gte mso 9)|(IE)]>
+    </td><td width="50%" valign="top">
+    <![endif]-->
+    div.column
+      table(width='100%')
+        tr
+          td.inner
+            table.contents
+              tr
+                td
+                  img(src="#{twoColumnSource2}" width='280' alt="#{twoColumnAltText2}")
+              tr
+                td.text 
+                  p.h2 #{twoColumnHeader1}
+                  span #{twoColumnText2}
+    <!--[if (gte mso 9)|(IE)]>
+    </td>
+    </tr>
+    </table>
+    <![endif]-->

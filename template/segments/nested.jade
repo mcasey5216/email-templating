@@ -1,0 +1,27 @@
+- var nested = ""
+
+tr
+  td.multi-column
+    <!--[if (gte mso 9)|(IE)]>
+    <table width="100%">
+    <tr>
+    <td width="80%" valign="top">
+    <![endif]-->
+    div.column-80
+      table(width="100%")
+        tr 
+          td.inner
+            table.contents 
+              tr
+                td.text-nested #{nested}
+    <!--[if (gte mso 9)|(IE)]>
+    </td><td width="20%" valign="top">
+    <![endif]-->
+    div.column-80
+      table(width="100%")
+        tr 
+          td.inner
+            table.contents 
+              tr
+                td.text-nested
+                  a(href="*|ARCHIVE|*") View in Browser

@@ -1,0 +1,63 @@
+- var threeColumnSource1  = ""
+- var threeColumnText1    = ""
+- var threeColumnHeader1  = ""
+- var threeColumnAltText1 = ""
+
+- var threeColumnSource2  = ""
+- var threeColumnText2    = ""
+- var threeColumnHeader2  = ""
+- var threeColumnAltText2 = ""
+
+- var threeColumnSource3  = ""
+- var threeColumnText3    = ""
+- var threeColumnHeader3  = ""
+- var threeColumnAltText3 = ""
+
+tr
+  td.three-column
+    <!--[if (gte mso 9)|(IE)]>
+    <table width="100%">
+    <tr>
+    <td width="200" valign="top">
+    <![endif]-->
+    table.column
+      tr
+        td.inner
+          table.contents
+            tr
+              td
+                img(src="#{threeColumnSource1}" width="180" alt="#{threeColumnAltText1}")
+            tr
+              p.h2 #{threeColumnHeader1}
+              td.text #{threeColumnText1}
+    <!--[if (gte mso 9)|(IE)]>
+    </td><td width="200" valign="top">
+    <![endif]-->
+    table.column
+      tr
+        td.inner
+          table.contents
+            tr
+              td
+                img(src="#{threeColumnSource2}" width="180" alt="#{threeColumnAltText2}")
+            tr
+              p.h2 #{threeColumnHeader2}
+              td.text #{threeColumnText2}
+    <!--[if (gte mso 9)|(IE)]>
+    </td><td width="200" valign="top">
+    <![endif]-->
+    table.column
+      tr
+        td.inner
+          table.contents
+            tr
+              td
+                img(src="#{threeColumnSource3}" width="180" alt="#{threeColumnAltText3}")
+            tr
+              p.h2 #{threeColumnHeader3}
+              td.text #{threeColumnText3}
+    <!--[if (gte mso 9)|(IE)]>
+    </td>
+    </tr>
+    </table>
+    <![endif]-->

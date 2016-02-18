@@ -1,4 +1,26 @@
-include openingTags.jade
+doctype html
+html(lang="en" xmlns="http://www.w3.org/1999/xhtml")
+  head
+    meta(http-equiv="Content-Type" content="text/html; charset=utf-8")
+    <!--[if !mso]><!-->
+    meta(http-equiv="X-UA-Compatible" content="IE=edge")
+    <!--<![endif]-->
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    title= pageTitle
+    link(rel="stylesheet" type="text/css" href="styles.css")
+    <!--[if (gte mso 9)|(IE)]>
+    <style type="text/css">table {border-collapse: collapse;}</style>
+    <![endif]-->
+  body
+    style(type="text/css" media="screen") 
+      include style.css
+    center.wrapper
+      div.webkit
+        <!--[if (gte mso 9)|(IE)]>
+        <table width="600" align="center">
+        <tr>
+        <td>
+        <![endif]-->
 
         - var nested = "A nested subject line."
         
@@ -43,8 +65,8 @@ include openingTags.jade
                       table.contents 
                         tr
                           td.text-nested
-                            a(href="*|ARCHIVE|*")View in Browser
-          // header                  
+                            a(href="*|ARCHIVE|*") View in Browser
+          // header
           tr
             td
               table.outer(align="center")
@@ -69,7 +91,7 @@ include openingTags.jade
               <tr>
               <td width="50%" valign="top">
               <![endif]-->
-              div.column-50
+              div.column
                 table(width='100%')
                   tr
                     td.inner
@@ -78,7 +100,9 @@ include openingTags.jade
                           td
                             img(src="#{twoColumnSource}" width='280' alt='image')
                         tr
-                          td.text #{twoColumnText}
+                          td.text 
+                            p.h2 1/2 Two Column
+                            span #{twoColumnText}
               <!--[if (gte mso 9)|(IE)]>
               </td><td width="50%" valign="top">
               <![endif]-->
@@ -91,7 +115,9 @@ include openingTags.jade
                           td
                             img(src="#{twoColumnSource}" width='280' alt='image')
                         tr
-                          td.text #{twoColumnText}
+                          td.text 
+                            p.h2 1/2 Two Column
+                            span #{twoColumnText}
               <!--[if (gte mso 9)|(IE)]>
               </td>
               </tr>
@@ -114,6 +140,7 @@ include openingTags.jade
                         td
                           img(src="#{threeColumnImageSource}" width="180" alt="image")
                       tr
+                        p.h2 1/3 Three Column
                         td.text #{threeColumnText}
               <!--[if (gte mso 9)|(IE)]>
               </td><td width="200" valign="top">
@@ -126,6 +153,7 @@ include openingTags.jade
                         td
                           img(src="#{threeColumnImageSource}" width="180" alt="image")
                       tr
+                        p.h2 1/3 Three Column
                         td.text #{threeColumnText}
               <!--[if (gte mso 9)|(IE)]>
               </td><td width="200" valign="top">
@@ -138,6 +166,7 @@ include openingTags.jade
                         td
                           img(src="#{threeColumnImageSource}" width="180" alt="image")
                       tr
+                        p.h2 1/3 Three Column
                         td.text #{threeColumnText}
               <!--[if (gte mso 9)|(IE)]>
               </td>
@@ -161,7 +190,9 @@ include openingTags.jade
                         td
                           img(src="#{fourColumnImageSource}" width="130" alt="image")
                       tr
-                        td.text #{fourColumnText}
+                        td.text 
+                        p.h2 1/4 Four Column
+                        span #{fourColumnText}
               <!--[if (gte mso 9)|(IE)]>
               </td><td width="150" valign="top">
               <![endif]-->
@@ -174,8 +205,8 @@ include openingTags.jade
                           img(src="#{fourColumnImageSource}" width="130" alt="image")
                       tr
                         td.text 
-                          p.h2 1/4 Four-Column 
-                          #{fourColumnText}
+                        p.h2 1/4 Four Column
+                        span #{fourColumnText}
               <!--[if (gte mso 9)|(IE)]>
               </td><td width="150" valign="top">
               <![endif]-->
@@ -187,7 +218,90 @@ include openingTags.jade
                         td
                           img(src="#{fourColumnImageSource}" width="130" alt="image")
                       tr
-                        td.text #{fourColumnText}
+                        td.text 
+                        p.h2 1/4 Four Column
+                        span #{fourColumnText}
+              <!--[if (gte mso 9)|(IE)]>
+              </td><td width="150" valign="top">
+              <![endif]-->
+              table.column
+                tr
+                  td.inner
+                    table.contents
+                      tr
+                        td
+                          img(src="#{fourColumnImageSource}" width="130" alt="image")
+                      tr
+                        td.text 
+                        p.h2 1/4 Four Column
+                        span #{fourColumnText}
+              <!--[if (gte mso 9)|(IE)]>
+              </td>
+              </tr>
+              </table>
+              <![endif]-->
+          
+          //four column
+          tr
+            td.four-column
+              <!--[if (gte mso 9)|(IE)]>
+              <table width="100%">
+              <tr>
+              <td width="150" valign="top">
+              <![endif]-->
+              table.column
+                tr
+                  td.inner
+                    table.contents
+                      tr
+                        td
+                          img(src="#{fourColumnImageSource}" width="130" alt="image")
+                      tr
+                        td.text 
+                        p.h2 1/4 Four Column
+                        span #{fourColumnText}
+              <!--[if (gte mso 9)|(IE)]>
+              </td><td width="150" valign="top">
+              <![endif]-->
+              table.column
+                tr
+                  td.inner
+                    table.contents
+                      tr
+                        td
+                          img(src="#{fourColumnImageSource}" width="130" alt="image")
+                      tr
+                        td.text 
+                        p.h2 1/4 Four Column
+                        span #{fourColumnText}
+              <!--[if (gte mso 9)|(IE)]>
+              </td><td width="150" valign="top">
+              <![endif]-->
+              table.column
+                tr
+                  td.inner
+                    table.contents
+                      tr
+                        td
+                          img(src="#{fourColumnImageSource}" width="130" alt="image")
+                      tr
+                        td.text 
+                        p.h2 1/4 Four Column
+                        span #{fourColumnText}
+              <!--[if (gte mso 9)|(IE)]>
+              </td><td width="150" valign="top">
+              <![endif]-->
+              table.column
+                tr
+                  td.inner
+                    table.contents
+                      tr
+                        td
+                          img(src="#{fourColumnImageSource}" width="130" alt="image")
+                      tr
+                        td.text 
+                        p.h2 1/4 Four Column
+                        span #{fourColumnText}
               <!--[if (gte mso 9)|(IE)]>
               </td>
               </tr>
