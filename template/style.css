@@ -1,3 +1,4 @@
+/* Basics */
 body {
   Margin: 0;
   padding: 0;
@@ -42,7 +43,7 @@ p {
 }
 a {
   color: #ee6a56;
-  text-decoration: underline;
+  text-decoration: none;
 }
 .h1 {
   font-size: 21px;
@@ -63,16 +64,11 @@ a {
   font-size: 14px;
   Margin-bottom: 10px;
 }
+
 /*Two column layout*/
 .two-column {
   text-align: center;
   font-size: 0;
-}
-.two-column .column {
-  width: 100%;
-  max-width: 300px;
-  display: inline-block;
-  vertical-align: top;
 }
 .contents {
   width: 100%;
@@ -81,6 +77,12 @@ a {
   font-size: 14px;
   text-align: left;
 }
+.two-column .column-50 {
+  width: 100%;
+  max-width: 300px;
+  display: inline-block;
+  vertical-align: top;
+}
 .two-column img {
   width: 100%;
   max-width: 280px;
@@ -88,6 +90,67 @@ a {
 }
 .two-column .text {
   padding-top: 10px;
+}
+/*Multi-column layout*/
+.multi-column {
+  text-align: center;
+  font-size: 0;
+}
+.multi-column .column-40 {
+  width: 100%;
+  max-width: 240px;
+  display: inline-block;
+  vertical-align: top;
+}
+.multi-column .column-60 {
+  width: 100%;
+  max-width: 360px;
+  display: inline-block;
+  vertical-align: top;
+}
+.multi-column .column-30 {
+  width: 100%;
+  max-width: 180px;
+  display: inline-block;
+  vertical-align: top;
+}
+.multi-column .column-70 {
+  width: 100%;
+  max-width: 420px;
+  display: inline-block;
+  vertical-align: top;
+}
+.multi-column .column-20 {
+  width: 100%;
+  max-width: 120px;
+  display: inline-block;
+  vertical-align: top;
+}
+.multi-column .column-80 {
+  width: 100%;
+  max-width: 480px;
+  display: inline-block;
+  vertical-align: top;
+}
+.multi-column .contents {
+  font-size: 14px;
+  text-align: left;
+}
+.multi-column .contents-right {
+  font-size: 14px;
+  text-align: right;
+}
+.multi-column img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+}
+.multi-column .text {
+  padding-top: 10px;
+}
+.multi-column .text-nested {
+  padding-top: 10px;
+  font-size: 12px;
 }
 /*Three column layout*/
 .three-column {
@@ -112,5 +175,56 @@ a {
   height: auto;
 }
 .three-column .text {
+  padding-top: 10px;
+}
+/*four column layout*/
+.four-column {
+  text-align: center;
+  font-size: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.four-column .column {
+  width: 100%;
+  max-width: 150px;
+  display: inline-block;
+  vertical-align: top;
+}
+.four-column .contents {
+  font-size: 14px;
+  text-align: center;
+}
+.four-column img {
+  width: 100%;
+  max-width: 130px;
+  height: auto;
+}
+.four-column .text {
+  padding-top: 10px;
+}
+
+/*five column layout*/
+.five-column {
+  text-align: center;
+  font-size: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.five-column .column {
+  width: 100%;
+  max-width: 120px;
+  display: inline-block;
+  vertical-align: top;
+}
+.five-column .contents {
+  font-size: 14px;
+  text-align: center;
+}
+.five-column img {
+  width: 100%;
+  max-width: 100px;
+  height: auto;
+}
+.five-column .text {
   padding-top: 10px;
 }

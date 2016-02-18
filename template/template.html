@@ -50,36 +50,18 @@
       }
       .full-width-image img {
         width: 100%;
-        max-width: 300px;
+        max-width: 600px;
         height: auto;
-        background-color: #950300;
-      }
-      .full-width-image {
-        background-color: #950300;
-        padding: 10px;
       }
       .inner {
         padding: 10px;
-      }
-      .inner-nest {
-        padding: 0px;
       }
       p {
         Margin: 0;
       }
       a {
-        color: #bf2f00;
+        color: #ee6a56;
         text-decoration: none;
-        font-size: 16px;
-      }
-      a.view-browser {
-        color: #bf2f00;
-        text-decoration: none;
-        font-size: 12px;
-      }
-      a.topic {
-        text-decoration: underline;
-        font-size: 14px;
       }
       .h1 {
         font-size: 21px;
@@ -96,44 +78,15 @@
       .one-column .contents {
         text-align: left;
       }
-      .one-column-foot .contents{
-        background-color:#ece8e8;
-        padding-bottom: 0px;
-        font-size: 12px;
-        color: #6d6666;
-      }
       .one-column p {
-        font-size: 18px;
-        line-height: 22px;
-        color: #6d6666;
+        font-size: 14px;
+        Margin-bottom: 10px;
       }
-      .one-column p.footer {
-        font-size: 12px;
-        color: #6d6666;
-      }
+
       /*Two column layout*/
       .two-column {
-        text-align: center;
+        text-align: left;
         font-size: 0;
-      }
-      .two-column .column {
-        width: 100%;
-        max-width: 300px;
-        display: inline-block;
-        vertical-align: top;
-      }
-      .two-column .column-nest {
-        width: 100%;
-        max-width: 375px;
-        display: inline-block;
-        vertical-align: top;
-      }
-      .two-column .column-view {
-        width: 100%;
-        max-width: 225px;
-        display: inline-block;
-        vertical-align: top;
-        text-align: right;
       }
       .contents {
         width: 100%;
@@ -141,54 +94,97 @@
       .two-column .contents {
         font-size: 14px;
         text-align: left;
-        background-color: #f7f6f3;
-        padding: 10px;
       }
-      .two-column .contents-nest {
-        font-size: 14px;
-        text-align: left;
-        background-color: #fff;
-        padding: 10px;
-      }
-      .two-column .contents-nest-view {
-        font-size: 14px;
-        text-align: right;
-        background-color: #fff;
-        padding: 10px;
-      }
-      .two-column .contents.nest {
-        font-size: 14px;
-        text-align: left;
-        background-color: #fff;
+      .two-column .column-50 {
+        width: 100%;
+        max-width: 300px;
+        display: inline-block;
+        vertical-align: top;
       }
       .two-column img {
         width: 100%;
-        max-width: 260px;
+        max-width: 280px;
         height: auto;
-        border: 1px solid #950300;
       }
       .two-column .text {
-        padding-bottom: 10px;
-        line-height: 19px;
-        color:#222222;
+        padding-top: 10px;
+      }
+      /*Multi-column layout*/
+      .multi-column {
+        text-align: left;
+        font-size: 0;
+      }
+      .multi-column .column-40 {
+        width: 100%;
+        max-width: 240px;
+        display: inline-block;
+        vertical-align: top;
+      }
+      .multi-column .column-60 {
+        width: 100%;
+        max-width: 360px;
+        display: inline-block;
+        vertical-align: top;
+      }
+      .multi-column .column-30 {
+        width: 100%;
+        max-width: 180px;
+        display: inline-block;
+        vertical-align: top;
+      }
+      .multi-column .column-70 {
+        width: 100%;
+        max-width: 420px;
+        display: inline-block;
+        vertical-align: top;
+      }
+      .multi-column .column-20 {
+        width: 100%;
+        max-width: 120px;
+        display: inline-block;
+        vertical-align: top;
+      }
+      .multi-column .column-80 {
+        width: 100%;
+        max-width: 480px;
+        display: inline-block;
+        vertical-align: top;
+      }
+      .multi-column .contents {
+        font-size: 14px;
+        text-align: left;
+      }
+      .multi-column .contents-right {
+        font-size: 14px;
+        text-align: right;
+      }
+      .multi-column img {
+        width: 100%;
+        max-width: 600px;
+        height: auto;
+      }
+      .multi-column .text {
+        padding-top: 10px;
+      }
+      .multi-column .text-nested {
+        padding-top: 10px;
+        font-size: 12px;
       }
       /*Three column layout*/
       .three-column {
-        text-align: center;
+        text-align: left;
         font-size: 0;
-        padding-top: 0px;
+        padding-top: 10px;
         padding-bottom: 10px;
-        background-color:#ece8e8;
       }
       .three-column .column {
         width: 100%;
         max-width: 200px;
         display: inline-block;
         vertical-align: top;
-
       }
       .three-column .contents {
-        font-size: 12px;
+        font-size: 14px;
         text-align: left;
       }
       .three-column img {
@@ -197,57 +193,57 @@
         height: auto;
       }
       .three-column .text {
-        color: #6d6666;
+        padding-top: 10px;
       }
-      .nested {
-        font-size: 11px;
-        color: #6d6666;
+      /*four column layout*/
+      .four-column {
+        text-align: left;
+        font-size: 0;
+        padding-top: 10px;
+        padding-bottom: 10px;
       }
-      .button-red {
-        padding-top: 14px;
-        padding-right: 40px;
-        padding-bottom: 14px;
-        padding-left: 40px;
-        background: #8a2829;
-        -moz-border-radius: 6px;
-        -webkit-border-radius: 6px;
-        border-radius: 6px;
-        color: #fff;
-        border: solid 1px #5b1b1c;
-        font-size: 18px;
-        text-align: center;
+      .four-column .column {
+        width: 100%;
+        max-width: 150px;
+        display: inline-block;
+        vertical-align: top;
       }
-      .button-blue {
-        padding-top: 14px;
-        padding-right: 40px;
-        padding-bottom: 14px;
-        padding-left: 40px;
-        background: #b9e8fe;
-        -moz-border-radius: 6px;
-        -webkit-border-radius: 6px;
-        border-radius: 6px;
-        color: #fff;
-        border: solid 1px #9abecf;
-        font-size: 18px;
-        text-align: center;
+      .four-column .contents {
+        font-size: 14px;
+        text-align: left;
       }
-      a.watch-red {
-        color:#ffffff;
-        text-decoration: none;
+      .four-column img {
+        width: 100%;
+        max-width: 130px;
+        height: auto;
       }
-      a.watch-blue {
-        color:#326177;
-        text-decoration: none;
+      .four-column .text {
+        padding-top: 10px;
       }
-      .footer a {
-        color: #bf2f00;
-        font-size: 12px;
-        text-decoration: none;
-        -webkit-hyphens: manual;
-        -moz-hyphens: manual;
-        hyphens: manual;
+
+      /*five column layout*/
+      .five-column {
+        text-align: left;
+        font-size: 0;
+        padding-top: 10px;
+        padding-bottom: 10px;
       }
-      .opener {
+      .five-column .column {
+        width: 100%;
+        max-width: 120px;
+        display: inline-block;
+        vertical-align: top;
+      }
+      .five-column .contents {
+        font-size: 14px;
+        text-align: left;
+      }
+      .five-column img {
+        width: 100%;
+        max-width: 100px;
+        height: auto;
+      }
+      .five-column .text {
         padding-top: 10px;
       }
     </style>
@@ -260,24 +256,22 @@
         <![endif]-->
         <table class="outer" align="center">
 
+
           <tr>
-            *|IFNOT:ARCHIVE_PAGE|*
-            <td class="two-column">
+            <td class="multi-column">
               <!--[if (gte mso 9)|(IE)]>
               <table width="100%">
               <tr>
-              <td width="50%" valign="top">
+              <td width="80%" valign="top">
               <![endif]-->
-              <div class="column-nest">
+              <div class="column-80">
                 <table width="100%">
                   <tr>
-                    <td class="inner-nest">
-                      <table class="contents-nest">
+                    <td class="inner">
+                      <table class="contents">
                         <tr>
-                          <td class="text">
-                            <p class="nested">
-                              Nested subject line
-                            </p>
+                          <td class="text-nested">
+                            A nested subject line
                           </td>
                         </tr>
                       </table>
@@ -286,18 +280,16 @@
                 </table>
               </div>
               <!--[if (gte mso 9)|(IE)]>
-              </td><td width="50%" valign="top">
+              </td><td width="20%" valign="top">
               <![endif]-->
-              <div class="column-view">
+              <div class="column-20">
                 <table width="100%">
                   <tr>
-                    <td class="inner-nest">
-                      <table class="contents-nest-view">
+                    <td class="inner">
+                      <table class="contents">
                         <tr>
-                          <td class="text">
-                            <p class="nested">
-                              Trouble viewing? <a href="*|ARCHIVE|*" class="view-browser">View in Browser</a>
-                            </p>
+                          <td class="text-nested">
+                            <a href="*|ARCHIVE|*">View in Browser</a>
                           </td>
                         </tr>
                       </table>
@@ -311,7 +303,6 @@
               </table>
               <![endif]-->
             </td>
-            *|END:IF|*
           </tr>
 
           <tr>
@@ -319,73 +310,49 @@
               <table class="outer" align="center">
                 <tr>
                   <td class="full-width-image">
-                    <img src="http://asset.uie.com/AYCL/img/all-you-can-learn-library.png" width="300" alt="header" />
+                    <img src="http://asset.uie.com/emails/img/sample_images/sloth_header.png" width="600" alt="header" />
                   </td>
                 </tr>
               </table>
             </td>
           </tr>
-
-
 
           <tr>
             <td class="one-column">
               <table width="100%">
                 <tr>
                   <td class="inner contents">
-                    <p class="opener">
-                      In the <a href="https://aycl.uie.com/">All You Can Learn Library</a>, there are currently 246 UX presentations for you to access. Here are some popular seminars addressing relevant and timely topics for your team.
-                    </p>
+                    <p class="h1">100% Width Text</p>
+                    <p>Maecenas sed ante pellentesque, posuere leo id, eleifend dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent laoreet malesuada cursus. Maecenas scelerisque congue eros eu posuere. Praesent in felis ut velit pretium lobortis rhoncus ut erat.</p>
                   </td>
                 </tr>
               </table>
             </td>
           </tr>
 
-
-
           <tr>
-          <td class="two-column">
-              <!--[if (gte mso 9)|(IE)]>
-              <table width="100%">
-              <tr>
-              <td width="50%" valign="top">
-              <![endif]-->
-              <div class="column">
+            <td class="two-column">
+            <!--[if (gte mso 9)|(IE)]>
+            <table width="100%">
+            <tr>
+            <td width="50%" valign="top">
+            <![endif]-->
+              <div class="column-50">
                 <table width="100%">
                   <tr>
                     <td class="inner">
                       <table class="contents">
                         <tr>
+                          <td>
+                            <img src="http://asset.uie.com/emails/img/sample_images/doggy.jpg" width="280" alt="image" />
+                          </td>
+                        </tr>
+                        <tr>
                           <td class="text">
-                            <a href="http://aycl.uie.com/virtual_seminars/topic/user_research" class="topic">
-                              User Research
-                            </a>
-                            <br>
-                            <a href="https://www.uie.com/events/virtual_seminars/recruiting_real_users/">
-                              Gaining Design Insights from Your Research Recruiting Process
-                            </a>
-                            <br>
-                            Dana Chisnell
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>
-                            <a href="https://www.uie.com/events/virtual_seminars/recruiting_real_users/">
-                              <img src="http://asset.uie.com/img/AYCL/01_30_16/Chisnell.png" width="280" alt="image" />
-                            </a>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>
-                            <br>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td class="text button-red">
-                            <a class="watch-red" href="https://www.uie.com/events/virtual_seminars/recruiting_real_users/">
-                              Watch This Now
-                            </a>
+                            <p class="h2">
+                              1/2 Two-Column
+                            </p>
+                            Maecenas sed ante pellentesque, posuere leo id, eleifend dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
                           </td>
                         </tr>
                       </table>
@@ -396,143 +363,22 @@
               <!--[if (gte mso 9)|(IE)]>
               </td><td width="50%" valign="top">
               <![endif]-->
-              <div class="column">
+              <div class="column-50">
                 <table width="100%">
                   <tr>
                     <td class="inner">
                       <table class="contents">
                         <tr>
-                          <td class="text">
-                            <a href="http://aycl.uie.com/virtual_seminars/storyboarding/" class="topic">
-                              Storyboarding
-                            </a>
-                            <br>
-                            <a href="https://www.uie.com/events/virtual_seminars/storyboarding/">
-                              Storyboarding: Communicating Your Ideas with Comics & Drawings
-                            </a>
-                            <br>
-                            Kevin Cheng
-                          </td>
-                        </tr>
-                        <tr>
                           <td>
-                            <a href="https://www.uie.com/events/virtual_seminars/storyboarding/">
-                              <img
-                              src="http://asset.uie.com/img/AYCL/01_30_16/Cheng.png"
-                              width="280"
-                              alt="Screenshot of Kevin Cheng's Storyboarding: Communicating Your Ideas with Comics & Drawings"
-                              />
-                            </a>
+                            <img src="http://asset.uie.com/emails/img/sample_images/doggy.jpg" width="280" alt="image" />
                           </td>
                         </tr>
-                        <tr>
-                          <td>
-                            <br>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td class="text button-blue">
-                            <a class="watch-blue" href="https://www.uie.com/events/virtual_seminars/storyboarding/">
-                              Watch This Now
-                            </a>
-                          </td>
-                        </tr>
-                      </table>
-                    </td>
-                  </tr>
-                </table>
-              </div>
-              <!--[if (gte mso 9)|(IE)]>
-              </td><td width="50%" valign="top">
-              <![endif]-->
-              <div class="column">
-                <table width="100%">
-                  <tr>
-                    <td class="inner">
-                      <table class="contents">
                         <tr>
                           <td class="text">
-                            <a href="http://aycl.uie.com/virtual_seminars/storyboarding/" class="topic">
-                              Storyboarding
-                            </a>
-                            <br>
-                            <a href="https://www.uie.com/events/virtual_seminars/storyboarding/">
-                              Storyboarding: Communicating Your Ideas with Comics & Drawings
-                            </a>
-                            <br>
-                            Kevin Cheng
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>
-                            <a href="https://www.uie.com/events/virtual_seminars/storyboarding/">
-                              <img
-                              src="http://asset.uie.com/img/AYCL/01_30_16/Cheng.png"
-                              width="280"
-                              alt="Screenshot of Kevin Cheng's Storyboarding: Communicating Your Ideas with Comics & Drawings"
-                              />
-                            </a>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>
-                            <br>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td class="text button-red">
-                            <a class="watch-red" href="https://www.uie.com/events/virtual_seminars/storyboarding/">
-                              Watch This Now
-                            </a>
-                          </td>
-                        </tr>
-                      </table>
-                    </td>
-                  </tr>
-                </table>
-              </div>
-              <!--[if (gte mso 9)|(IE)]>
-              </td><td width="50%" valign="top">
-              <![endif]-->
-              <div class="column">
-                <table width="100%">
-                  <tr>
-                    <td class="inner">
-                      <table class="contents">
-                        <tr>
-                          <td class="text">
-                            <a href="http://aycl.uie.com/virtual_seminars/storyboarding/" class="topic">
-                              Storyboarding
-                            </a>
-                            <br>
-                            <a href="https://www.uie.com/events/virtual_seminars/storyboarding/">
-                              Storyboarding: Communicating Your Ideas with Comics & Drawings
-                            </a>
-                            <br>
-                            Kevin Cheng
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>
-                            <a href="https://www.uie.com/events/virtual_seminars/storyboarding/">
-                              <img
-                              src="http://asset.uie.com/img/AYCL/01_30_16/Cheng.png"
-                              width="280"
-                              alt="Screenshot of Kevin Cheng's Storyboarding: Communicating Your Ideas with Comics & Drawings"
-                              />
-                            </a>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>
-                            <br>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td class="text button-red">
-                            <a class="watch-red" href="https://www.uie.com/events/virtual_seminars/storyboarding/">
-                              Watch This Now
-                            </a>
+                            <p class="h2">
+                              1/2 Two-Column
+                            </p>
+                            Maecenas sed ante pellentesque, posuere leo id, eleifend dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
                           </td>
                         </tr>
                       </table>
@@ -545,21 +391,6 @@
               </tr>
               </table>
               <![endif]-->
-            </td>
-          </tr>
-
-
-          <tr>
-            <td class="one-column-foot">
-              <table width="100%">
-                <tr>
-                  <td class="inner contents foot">
-                    <p class="footer">
-                      Copyright © *|CURRENT_YEAR|*, <a href="http://www.uie.com">User Interface Engineering</a>. All Rights Reserved.
-                    </p>
-                  </td>
-                </tr>
-              </table>
             </td>
           </tr>
 
@@ -575,10 +406,16 @@
                   <td class="inner">
                     <table class="contents">
                       <tr>
+                        <td>
+                          <img src="http://asset.uie.com/emails/img/sample_images/hedgehog.jpg" width="180" alt="image" />
+                        </td>
+                      </tr>
+                      <tr>
                         <td class="text">
-                          510 Turnpike St., Suite 102
-                          <br>
-                          North Andover, MA 01845
+                          <p class="h2">
+                            1/3 Three-Column
+                          </p>
+                          Scelerisque congue eros eu posuere. Praesent in felis ut velit pretium lobortis rhoncus ut erat.
                         </td>
                       </tr>
                     </table>
@@ -593,12 +430,16 @@
                   <td class="inner">
                     <table class="contents">
                       <tr>
+                        <td>
+                          <img src="http://asset.uie.com/emails/img/sample_images/hedgehog.jpg" width="180" alt="image" />
+                        </td>
+                      </tr>
+                      <tr>
                         <td class="text">
-                          1.800.588.9855
-                          <br>
-                          (within the U.S. and Canada)
-                          <br>
-                          or +1.978.327.5561
+                          <p class="h2">
+                            1/3 Three-Column
+                          </p>
+                          Scelerisque congue eros eu posuere. Praesent in felis ut velit pretium lobortis rhoncus ut erat.
                         </td>
                       </tr>
                     </table>
@@ -613,12 +454,16 @@
                   <td class="inner">
                     <table class="contents">
                       <tr>
+                        <td>
+                          <img src="http://asset.uie.com/emails/img/sample_images/hedgehog.jpg" width="180" alt="image" />
+                        </td>
+                      </tr>
+                      <tr>
                         <td class="text">
-                          Questions or comments?
-                          <br>
-                          Please send e-mail to
-                          <br>
-                          <a href="mailto:events@uie.com">events@uie.com</a>
+                          <p class="h2">
+                            1/3 Three-Column
+                          </p>
+                          Scelerisque congue eros eu posuere. Praesent in felis ut velit pretium lobortis rhoncus ut erat.
                         </td>
                       </tr>
                     </table>
@@ -634,26 +479,436 @@
           </tr>
 
           <tr>
-            *|IFNOT:ARCHIVE_PAGE|*
-            <td class="one-column">
+            <td class="four-column">
+              <!--[if (gte mso 9)|(IE)]>
               <table width="100%">
+              <tr>
+              <td width="150" valign="top">
+              <![endif]-->
+              <table class="column">
                 <tr>
-                  <td class="inner contents">
-                    <p class="footer">
-  										Sent to *|EMAIL|* &mdash;
-                      <a href="*|ABOUT_LIST|*"><em>why did I get this?</em></a>
-                      |
-                      <a href="*|UPDATE_PROFILE|*">update subscription preferences</a>
-  									  |
-  									  <a href="*|UNSUB|*">unsubscribe&nbsp;from&nbsp;this&nbsp;list</a>
-                    </p>
+                  <td class="inner">
+                    <table class="contents">
+                      <tr>
+                        <td>
+                          <img src="http://asset.uie.com/emails/img/sample_images/piggy.jpg" width="130" alt="image" />
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="text">
+                          <p class="h2">
+                            1/4 Four-Column
+                          </p>
+                          Scelerisque congue eros eu posuere. Praesent in felis ut velit pretium lobortis rhoncus ut erat.
+                        </td>
+                      </tr>
+                    </table>
                   </td>
                 </tr>
               </table>
+              <!--[if (gte mso 9)|(IE)]>
+              </td><td width="150" valign="top">
+              <![endif]-->
+              <table class="column">
+                <tr>
+                  <td class="inner">
+                    <table class="contents">
+                      <tr>
+                        <td>
+                          <img src="http://asset.uie.com/emails/img/sample_images/piggy.jpg" width="130" alt="image" />
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="text">
+                          <p class="h2">
+                            1/4 Four-Column
+                          </p>
+                          Scelerisque congue eros eu posuere. Praesent in felis ut velit pretium lobortis rhoncus ut erat.
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+              <!--[if (gte mso 9)|(IE)]>
+              </td><td width="150" valign="top">
+              <![endif]-->
+              <table class="column">
+                <tr>
+                  <td class="inner">
+                    <table class="contents">
+                      <tr>
+                        <td>
+                          <img src="http://asset.uie.com/emails/img/sample_images/piggy.jpg" width="130" alt="image" />
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="text">
+                          <p class="h2">
+                            1/4 Four-Column
+                          </p>
+                          Scelerisque congue eros eu posuere. Praesent in felis ut velit pretium lobortis rhoncus ut erat.
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+              <!--[if (gte mso 9)|(IE)]>
+              </td><td width="150" valign="top">
+              <![endif]-->
+              <table class="column">
+                <tr>
+                  <td class="inner">
+                    <table class="contents">
+                      <tr>
+                        <td>
+                          <img src="http://asset.uie.com/emails/img/sample_images/piggy.jpg" width="130" alt="image" />
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="text">
+                          <p class="h2">
+                            1/4 Four-Column
+                          </p>
+                          Scelerisque congue eros eu posuere. Praesent in felis ut velit pretium lobortis rhoncus ut erat.
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+              <!--[if (gte mso 9)|(IE)]>
+              </td>
+              </tr>
+              </table>
+              <![endif]-->
             </td>
-            *|END:IF|*
           </tr>
 
+          <tr>
+            <td class="five-column">
+              <!--[if (gte mso 9)|(IE)]>
+              <table width="100%">
+              <tr>
+              <td width="120" valign="top">
+              <![endif]-->
+              <table class="column">
+                <tr>
+                  <td class="inner">
+                    <table class="contents">
+                      <tr>
+                        <td>
+                          <img src="http://asset.uie.com/emails/img/sample_images/ducky.jpg" width="100" alt="image" />
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="text">
+                          <p class="h2">
+                            1/5 Five-Column
+                          </p>
+                          Scelerisque congue eros eu posuere. Praesent in felis ut velit pretium lobortis rhoncus ut erat.
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+              <!--[if (gte mso 9)|(IE)]>
+              </td><td width="120" valign="top">
+              <![endif]-->
+              <table class="column">
+                <tr>
+                  <td class="inner">
+                    <table class="contents">
+                      <tr>
+                        <td>
+                          <img src="http://asset.uie.com/emails/img/sample_images/ducky.jpg" width="100" alt="image" />
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="text">
+                          <p class="h2">
+                            1/5 Five-Column
+                          </p>
+                          Scelerisque congue eros eu posuere. Praesent in felis ut velit pretium lobortis rhoncus ut erat.
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+              <!--[if (gte mso 9)|(IE)]>
+              </td><td width="120" valign="top">
+              <![endif]-->
+              <table class="column">
+                <tr>
+                  <td class="inner">
+                    <table class="contents">
+                      <tr>
+                        <td>
+                          <img src="http://asset.uie.com/emails/img/sample_images/ducky.jpg" width="100" alt="image" />
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="text">
+                          <p class="h2">
+                            1/5 Five-Column
+                          </p>
+                          Scelerisque congue eros eu posuere. Praesent in felis ut velit pretium lobortis rhoncus ut erat.
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+              <!--[if (gte mso 9)|(IE)]>
+              </td><td width="120" valign="top">
+              <![endif]-->
+              <table class="column">
+                <tr>
+                  <td class="inner">
+                    <table class="contents">
+                      <tr>
+                        <td>
+                          <img src="http://asset.uie.com/emails/img/sample_images/ducky.jpg" width="100" alt="image" />
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="text">
+                          <p class="h2">
+                            1/5 Five-Column
+                          </p>
+                          Scelerisque congue eros eu posuere. Praesent in felis ut velit pretium lobortis rhoncus ut erat.
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+              <!--[if (gte mso 9)|(IE)]>
+              </td><td width="120" valign="top">
+              <![endif]-->
+              <table class="column">
+                <tr>
+                  <td class="inner">
+                    <table class="contents">
+                      <tr>
+                        <td>
+                          <img src="http://asset.uie.com/emails/img/sample_images/ducky.jpg" width="100" alt="image" />
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="text">
+                          <p class="h2">
+                            1/5 Five-Column
+                          </p>
+                          Scelerisque congue eros eu posuere. Praesent in felis ut velit pretium lobortis rhoncus ut erat.
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+              <!--[if (gte mso 9)|(IE)]>
+              </td>
+              </tr>
+              </table>
+              <![endif]-->
+            </td>
+          </tr>
+
+          <tr>
+            <td class="multi-column">
+            <!--[if (gte mso 9)|(IE)]>
+            <table width="100%">
+            <tr>
+            <td width="40%" valign="top">
+            <![endif]-->
+              <div class="column-40">
+                <table width="100%">
+                  <tr>
+                    <td class="inner">
+                      <table class="contents">
+                        <tr>
+                          <td>
+                            <img src="http://asset.uie.com/emails/img/sample_images/bandit.jpg" width="240" alt="image" />
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="text">
+                            <p class="h2">
+                              40% Multi-Column
+                            </p>
+                            Maecenas sed ante pellentesque, posuere leo id, eleifend dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <!--[if (gte mso 9)|(IE)]>
+              </td><td width="60%" valign="top">
+              <![endif]-->
+              <div class="column-60">
+                <table width="100%">
+                  <tr>
+                    <td class="inner">
+                      <table class="contents">
+                        <tr>
+                          <td>
+                            <img src="http://asset.uie.com/emails/img/sample_images/bandit.jpg" width="360" alt="image" />
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="text">
+                            <p class="h2">
+                              60% Multi-Column
+                            </p>
+                            Maecenas sed ante pellentesque, posuere leo id, eleifend dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <!--[if (gte mso 9)|(IE)]>
+              </td>
+              </tr>
+              </table>
+              <![endif]-->
+            </td>
+          </tr>
+
+          <tr>
+            <td class="multi-column">
+            <!--[if (gte mso 9)|(IE)]>
+            <table width="100%">
+            <tr>
+            <td width="30%" valign="top">
+            <![endif]-->
+              <div class="column-30">
+                <table width="100%">
+                  <tr>
+                    <td class="inner">
+                      <table class="contents">
+                        <tr>
+                          <td>
+                            <img src="http://asset.uie.com/emails/img/sample_images/bandit.jpg" width="180" alt="image" />
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="text">
+                            <p class="h2">
+                              30% Multi-Column
+                            </p>
+                            Maecenas sed ante pellentesque, posuere leo id, eleifend dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <!--[if (gte mso 9)|(IE)]>
+              </td><td width="70%" valign="top">
+              <![endif]-->
+              <div class="column-70">
+                <table width="100%">
+                  <tr>
+                    <td class="inner">
+                      <table class="contents">
+                        <tr>
+                          <td>
+                            <img src="http://asset.uie.com/emails/img/sample_images/bandit.jpg" width="420" alt="image" />
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="text">
+                            <p class="h2">
+                              70% Multi-Column
+                            </p>
+                            Maecenas sed ante pellentesque, posuere leo id, eleifend dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <!--[if (gte mso 9)|(IE)]>
+              </td>
+              </tr>
+              </table>
+              <![endif]-->
+            </td>
+          </tr>
+
+          <tr>
+            <td class="multi-column">
+            <!--[if (gte mso 9)|(IE)]>
+            <table width="100%">
+            <tr>
+            <td width="20%" valign="top">
+            <![endif]-->
+              <div class="column-20">
+                <table width="100%">
+                  <tr>
+                    <td class="inner">
+                      <table class="contents">
+                        <tr>
+                          <td>
+                            <img src="http://asset.uie.com/emails/img/sample_images/bandit.jpg" width="120" alt="image" />
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="text">
+                            <p class="h2">
+                              20% Multi-Column
+                            </p>
+                            Maecenas sed ante pellentesque, posuere leo id, eleifend dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <!--[if (gte mso 9)|(IE)]>
+              </td><td width="80%" valign="top">
+              <![endif]-->
+              <div class="column-80">
+                <table width="100%">
+                  <tr>
+                    <td class="inner">
+                      <table class="contents">
+                        <tr>
+                          <td>
+                            <img src="http://asset.uie.com/emails/img/sample_images/bandit.jpg" width="480" alt="image" />
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="text">
+                            <p class="h2">
+                              80% Multi-Column
+                            </p>
+                            Maecenas sed ante pellentesque, posuere leo id, eleifend dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <!--[if (gte mso 9)|(IE)]>
+              </td>
+              </tr>
+              </table>
+              <![endif]-->
+            </td>
+          </tr>
 
 
         </table>

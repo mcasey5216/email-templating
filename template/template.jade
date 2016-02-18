@@ -1,34 +1,67 @@
-doctype html
-html(lang="en" xmlns="http://www.w3.org/1999/xhtml")
-  head
-    meta(http-equiv="Content-Type" content="text/html; charset=utf-8")
-    <!--[if !mso]><!-->
-    meta(http-equiv="X-UA-Compatible" content="IE=edge")
-    <!--<![endif]-->
-    meta(name="viewport" content="width=device-width, initial-scale=1.0")
-    title= pageTitle
-    link(rel="stylesheet" type="text/css" href="styles.css")
-    <!--[if (gte mso 9)|(IE)]>
-    <style type="text/css">table {border-collapse: collapse;}</style>
-    <![endif]-->
-  body
-    
-    - var headerSource = "image/header.jpg"
-    - var subHeaderText = "I am the opening text header"
-    - var openingText = "I am the opening text body"
-    - var Image01 = "img/doggy.jpg"
-    - var twoColumnText = "I am the two column text"
-    - var threeColumnText = "I am the three column text"
-    
-    style(type="text/css" media="screen") 
-      include style.css
-  
-    include openingTags.jade
-          include header.jade
+include openingTags.jade
+
+        - var nested = "A nested subject line."
+        
+        - var headerSource = "http://asset.uie.com/emails/img/sample_images/sloth_header.png"
+        - var headerAltText = "Header"
+        
+        - var fullWidthTextHeader = "100% Width Text"
+        - var fullWidthTextBody = "Maecenas sed ante pellentesque, posuere leo id, eleifend dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent laoreet malesuada cursus. Maecenas scelerisque congue eros eu posuere. Praesent in felis ut velit pretium lobortis rhoncus ut erat."
+        
+        - var twoColumnSource = "http://asset.uie.com/emails/img/sample_images/doggy.jpg"
+        - var twoColumnAltText = "image"
+        
+        - var subHeaderText = "I am the opening text header"
+        - var openingText = "I am the opening text body"
+        - var threeColumnImageSource = "img/doggy.jpg"
+        - var twoColumnText = "I am the two column text"
+        - var threeColumnText = "I am the three column text"
+      
+        // nested
+        table.outer(align='center')
           tr
-            td.inner.contents
-              p.h1 #{subHeaderText}
-              p #{openingText}
+            td.multi-column
+              <!--[if (gte mso 9)|(IE)]>
+              <table width="100%">
+              <tr>
+              <td width="80%" valign="top">
+              <![endif]-->
+              div.column-80
+                table(width="100%")
+                  tr 
+                    td.inner
+                      table.contents 
+                        tr
+                          td.text-nested #{nested}
+              <!--[if (gte mso 9)|(IE)]>
+              </td><td width="20%" valign="top">
+              <![endif]-->
+              div.column-80
+                table(width="100%")
+                  tr 
+                    td.inner
+                      table.contents 
+                        tr
+                          td.text-nested
+                            a(href="*|ARCHIVE|*")View in Browser
+          // header                  
+          tr
+            td
+              table.outer(align="center")
+                tr
+                  td.full-width-image
+                    img(src="#{headerSource}" width='600' alt="#{headerAltText}")
+                    
+          //one-column
+          tr
+            td.one-column
+              table(width="100%")
+                tr
+                  td.inner.contents 
+                    p.h1 #{fullWidthTextHeader}
+                    p #{fullWidthTextBody}
+          
+          //two-column 50/50 spilt
           tr
             td.two-column
               <!--[if (gte mso 9)|(IE)]>
@@ -36,14 +69,14 @@ html(lang="en" xmlns="http://www.w3.org/1999/xhtml")
               <tr>
               <td width="50%" valign="top">
               <![endif]-->
-              div.column
+              div.column-50
                 table(width='100%')
                   tr
                     td.inner
                       table.contents
                         tr
                           td
-                            img(src="#{Image01}" width='600' alt='image')
+                            img(src="#{twoColumnSource}" width='280' alt='image')
                         tr
                           td.text #{twoColumnText}
               <!--[if (gte mso 9)|(IE)]>
@@ -56,7 +89,7 @@ html(lang="en" xmlns="http://www.w3.org/1999/xhtml")
                       table.contents
                         tr
                           td
-                            img(src="#{Image01}" width='600' alt='image')
+                            img(src="#{twoColumnSource}" width='280' alt='image')
                         tr
                           td.text #{twoColumnText}
               <!--[if (gte mso 9)|(IE)]>
@@ -64,6 +97,8 @@ html(lang="en" xmlns="http://www.w3.org/1999/xhtml")
               </tr>
               </table>
               <![endif]-->
+          
+          //three column
           tr
             td.three-column
               <!--[if (gte mso 9)|(IE)]>
@@ -77,7 +112,7 @@ html(lang="en" xmlns="http://www.w3.org/1999/xhtml")
                     table.contents
                       tr
                         td
-                          img(src="#{Image01}" width="180" alt="image")
+                          img(src="#{threeColumnImageSource}" width="180" alt="image")
                       tr
                         td.text #{threeColumnText}
               <!--[if (gte mso 9)|(IE)]>
@@ -89,7 +124,7 @@ html(lang="en" xmlns="http://www.w3.org/1999/xhtml")
                     table.contents
                       tr
                         td
-                          img(src="#{Image01}" width="180" alt="image")
+                          img(src="#{threeColumnImageSource}" width="180" alt="image")
                       tr
                         td.text #{threeColumnText}
               <!--[if (gte mso 9)|(IE)]>
@@ -101,9 +136,58 @@ html(lang="en" xmlns="http://www.w3.org/1999/xhtml")
                     table.contents
                       tr
                         td
-                          img(src="#{Image01}" width="180" alt="image")
+                          img(src="#{threeColumnImageSource}" width="180" alt="image")
                       tr
                         td.text #{threeColumnText}
+              <!--[if (gte mso 9)|(IE)]>
+              </td>
+              </tr>
+              </table>
+              <![endif]-->
+          
+          //four column
+          tr
+            td.four-column
+              <!--[if (gte mso 9)|(IE)]>
+              <table width="100%">
+              <tr>
+              <td width="150" valign="top">
+              <![endif]-->
+              table.column
+                tr
+                  td.inner
+                    table.contents
+                      tr
+                        td
+                          img(src="#{fourColumnImageSource}" width="130" alt="image")
+                      tr
+                        td.text #{fourColumnText}
+              <!--[if (gte mso 9)|(IE)]>
+              </td><td width="150" valign="top">
+              <![endif]-->
+              table.column
+                tr
+                  td.inner
+                    table.contents
+                      tr
+                        td
+                          img(src="#{fourColumnImageSource}" width="130" alt="image")
+                      tr
+                        td.text 
+                          p.h2 1/4 Four-Column 
+                          #{fourColumnText}
+              <!--[if (gte mso 9)|(IE)]>
+              </td><td width="150" valign="top">
+              <![endif]-->
+              table.column
+                tr
+                  td.inner
+                    table.contents
+                      tr
+                        td
+                          img(src="#{fourColumnImageSource}" width="130" alt="image")
+                      tr
+                        td.text #{fourColumnText}
               <!--[if (gte mso 9)|(IE)]>
               </td>
               </tr>

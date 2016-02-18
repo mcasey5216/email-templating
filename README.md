@@ -1,0 +1,29 @@
+# Email Templating
+
+This is how to start an Email Template
+
+    doctype html
+    html(lang="en" xmlns="http://www.w3.org/1999/xhtml")
+      head
+        meta(http-equiv="Content-Type" content="text/html; charset=utf-8")
+        <!--[if !mso]><!-->
+        meta(http-equiv="X-UA-Compatible" content="IE=edge")
+        <!--<![endif]-->
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        title= pageTitle
+        link(rel="stylesheet" type="text/css" href="styles.css")
+        <!--[if (gte mso 9)|(IE)]>
+        <style type="text/css">table {border-collapse: collapse;}</style>
+        <![endif]-->
+      body
+        style(type="text/css" media="screen")
+          include style.css
+        center.wrapper
+          div.webkit
+            <!--[if (gte mso 9)|(IE)]>
+            <table width="600" align="center">
+            <tr>
+            <td>
+            <![endif]-->
+
+Then you must indent 4 times to start placing content
