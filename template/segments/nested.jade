@@ -1,6 +1,7 @@
 - var nested = ""
 
 tr
+  *|IFNOT:ARCHIVE_PAGE|*
   td.multi-column
     <!--[if (gte mso 9)|(IE)]>
     <table width="100%">
@@ -25,3 +26,4 @@ tr
               tr
                 td.text-nested
                   a(href="*|ARCHIVE|*") View in Browser
+  *|END:IF|*
