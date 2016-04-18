@@ -1,0 +1,927 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <!--[if !mso]><!-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!--<![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style type="text/css">
+
+</style>
+    <!--[if (gte mso 9)|(IE)]>
+    <style type="text/css">
+    table {border-collapse: collapse !important;}
+    </style>
+    <![endif]-->
+  </head>
+  <body style="Margin:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;min-width:100%;background-color:#ffffff;" >
+    <style media="screen">
+
+      body {
+        Margin: 0;
+        padding: 0;
+        min-width: 100%;
+        background-color: #ffffff;
+      }
+      table {
+        border-spacing: 0;
+        font-family: sans-serif;
+        color: #333333;
+      }
+      td {
+        padding: 0;
+      }
+      img {
+        border: 0;
+      }
+      .wrapper {
+        width: 100%;
+        table-layout: fixed;
+        -webkit-text-size-adjust: 100%;
+        -ms-text-size-adjust: 100%;
+      }
+      .webkit {
+        max-width: 600px;
+      }
+      .outer {
+        Margin: 0 auto;
+        width: 100%;
+        max-width: 600px;
+      }
+      .full-width-image img {
+        width: 100%;
+        max-width: 600px;
+        height: auto;
+      }
+      .inner {
+        padding: 10px;
+      }
+      p {
+        Margin: 0;
+      }
+      a {
+        color: #ee6a56;
+        text-decoration: none;
+      }
+      .h1 {
+        font-size: 21px;
+        font-weight: bold;
+        Margin-bottom: 18px;
+      }
+      .h2 {
+        font-size: 18px;
+        font-weight: bold;
+        Margin-bottom: 12px;
+      }
+
+
+      .one-column .contents {
+        text-align: left;
+      }
+      .one-column p {
+        font-size: 14px;
+        Margin-bottom: 10px;
+      }
+
+
+      .two-column {
+        text-align: left;
+        font-size: 0;
+      }
+      .contents {
+        width: 100%;
+      }
+      .two-column .contents {
+        font-size: 14px;
+        text-align: left;
+      }
+      .two-column .column-50 {
+        width: 100%;
+        max-width: 300px;
+        display: inline-block;
+        vertical-align: top;
+      }
+      .two-column img {
+        width: 100%;
+        max-width: 280px;
+        height: auto;
+      }
+      .two-column .text {
+        padding-top: 10px;
+      }
+
+      .multi-column {
+        text-align: left;
+        font-size: 0;
+      }
+      .multi-column .column-40 {
+        width: 100%;
+        max-width: 240px;
+        display: inline-block;
+        vertical-align: top;
+      }
+      .multi-column .column-60 {
+        width: 100%;
+        max-width: 360px;
+        display: inline-block;
+        vertical-align: top;
+      }
+      .multi-column .column-30 {
+        width: 100%;
+        max-width: 180px;
+        display: inline-block;
+        vertical-align: top;
+      }
+      .multi-column .column-70 {
+        width: 100%;
+        max-width: 420px;
+        display: inline-block;
+        vertical-align: top;
+      }
+      .multi-column .column-20 {
+        width: 100%;
+        max-width: 120px;
+        display: inline-block;
+        vertical-align: top;
+      }
+      .multi-column .column-80 {
+        width: 100%;
+        max-width: 480px;
+        display: inline-block;
+        vertical-align: top;
+      }
+      .multi-column .contents {
+        font-size: 14px;
+        text-align: left;
+      }
+      .multi-column .contents-right {
+        font-size: 14px;
+        text-align: right;
+      }
+      .multi-column img {
+        width: 100%;
+        max-width: 600px;
+        height: auto;
+      }
+      .multi-column .text {
+        padding-top: 10px;
+      }
+      .multi-column .text-nested {
+        padding-top: 10px;
+        font-size: 12px;
+      }
+
+      .three-column {
+        text-align: left;
+        font-size: 0;
+        padding-top: 10px;
+        padding-bottom: 10px;
+      }
+      .three-column .column {
+        width: 100%;
+        max-width: 200px;
+        display: inline-block;
+        vertical-align: top;
+      }
+      .three-column .contents {
+        font-size: 14px;
+        text-align: left;
+      }
+      .three-column img {
+        width: 100%;
+        max-width: 180px;
+        height: auto;
+      }
+      .three-column .text {
+        padding-top: 10px;
+      }
+
+      .four-column {
+        text-align: left;
+        font-size: 0;
+        padding-top: 10px;
+        padding-bottom: 10px;
+      }
+      .four-column .column {
+        width: 100%;
+        max-width: 150px;
+        display: inline-block;
+        vertical-align: top;
+      }
+      .four-column .contents {
+        font-size: 14px;
+        text-align: left;
+      }
+      .four-column img {
+        width: 100%;
+        max-width: 130px;
+        height: auto;
+      }
+      .four-column .text {
+        padding-top: 10px;
+      }
+
+
+      .five-column {
+        text-align: left;
+        font-size: 0;
+        padding-top: 10px;
+        padding-bottom: 10px;
+      }
+      .five-column .column {
+        width: 100%;
+        max-width: 120px;
+        display: inline-block;
+        vertical-align: top;
+      }
+      .five-column .contents {
+        font-size: 14px;
+        text-align: left;
+      }
+      .five-column img {
+        width: 100%;
+        max-width: 100px;
+        height: auto;
+      }
+      .five-column .text {
+        padding-top: 10px;
+      }
+    </style>
+    <center class="wrapper" style="width:100%;table-layout:fixed;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;" >
+      <div class="webkit" style="max-width:600px;" >
+        <!--[if (gte mso 9)|(IE)]>
+        <table width="600" align="center" style="border-spacing:0;font-family:sans-serif;color:#333333;" >
+        <tr>
+        <td style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
+        <![endif]-->
+        <table class="outer" align="center" style="border-spacing:0;font-family:sans-serif;color:#333333;Margin:0 auto;width:100%;max-width:600px;" >
+
+
+          <tr>
+            <td class="multi-column" style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;text-align:left;font-size:0;" >
+              <!--[if (gte mso 9)|(IE)]>
+              <table width="100%" style="border-spacing:0;font-family:sans-serif;color:#333333;" >
+              <tr>
+              <td width="80%" valign="top" style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
+              <![endif]-->
+              <div class="column-80" style="width:100%;max-width:480px;display:inline-block;vertical-align:top;" >
+                <table width="100%" style="border-spacing:0;font-family:sans-serif;color:#333333;" >
+                  <tr>
+                    <td class="inner" style="padding-top:10px;padding-bottom:10px;padding-right:10px;padding-left:10px;" >
+                      <table class="contents" style="border-spacing:0;font-family:sans-serif;color:#333333;width:100%;font-size:14px;text-align:left;" >
+                        <tr>
+                          <td class="text-nested" style="padding-bottom:0;padding-right:0;padding-left:0;padding-top:10px;font-size:12px;" >
+                            A nested subject line
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <!--[if (gte mso 9)|(IE)]>
+              </td><td width="20%" valign="top" style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
+              <![endif]-->
+              <div class="column-20" style="width:100%;max-width:120px;display:inline-block;vertical-align:top;" >
+                <table width="100%" style="border-spacing:0;font-family:sans-serif;color:#333333;" >
+                  <tr>
+                    <td class="inner" style="padding-top:10px;padding-bottom:10px;padding-right:10px;padding-left:10px;" >
+                      <table class="contents" style="border-spacing:0;font-family:sans-serif;color:#333333;width:100%;font-size:14px;text-align:left;" >
+                        <tr>
+                          <td class="text-nested" style="padding-bottom:0;padding-right:0;padding-left:0;padding-top:10px;font-size:12px;" >
+                            <a href="*|ARCHIVE|*" style="color:#ee6a56;text-decoration:none;" >View in Browser</a>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <!--[if (gte mso 9)|(IE)]>
+              </td>
+              </tr>
+              </table>
+              <![endif]-->
+            </td>
+          </tr>
+
+          <tr>
+            <td style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
+              <table class="outer" align="center" style="border-spacing:0;font-family:sans-serif;color:#333333;Margin:0 auto;width:100%;max-width:600px;" >
+                <tr>
+                  <td class="full-width-image" style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
+                    <img src="http://asset.uie.com/emails/img/sample_images/sloth_header.png" width="600" alt="header" style="border-width:0;width:100%;max-width:600px;height:auto;" />
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="one-column" style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
+              <table width="100%" style="border-spacing:0;font-family:sans-serif;color:#333333;" >
+                <tr>
+                  <td class="inner contents" style="padding-top:10px;padding-bottom:10px;padding-right:10px;padding-left:10px;width:100%;text-align:left;" >
+                    <p class="h1" style="Margin:0;font-weight:bold;font-size:14px;Margin-bottom:10px;" >100% Width Text</p>
+                    <p style="Margin:0;font-size:14px;Margin-bottom:10px;" >Maecenas sed ante pellentesque, posuere leo id, eleifend dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent laoreet malesuada cursus. Maecenas scelerisque congue eros eu posuere. Praesent in felis ut velit pretium lobortis rhoncus ut erat.</p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="two-column" style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;text-align:left;font-size:0;" >
+            <!--[if (gte mso 9)|(IE)]>
+            <table width="100%" style="border-spacing:0;font-family:sans-serif;color:#333333;" >
+            <tr>
+            <td width="50%" valign="top" style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
+            <![endif]-->
+              <div class="column-50" style="width:100%;max-width:300px;display:inline-block;vertical-align:top;" >
+                <table width="100%" style="border-spacing:0;font-family:sans-serif;color:#333333;" >
+                  <tr>
+                    <td class="inner" style="padding-top:10px;padding-bottom:10px;padding-right:10px;padding-left:10px;" >
+                      <table class="contents" style="border-spacing:0;font-family:sans-serif;color:#333333;width:100%;font-size:14px;text-align:left;" >
+                        <tr>
+                          <td style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
+                            <img src="http://asset.uie.com/emails/img/sample_images/doggy.jpg" width="280" alt="image" style="border-width:0;width:100%;max-width:280px;height:auto;" />
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="text" style="padding-bottom:0;padding-right:0;padding-left:0;padding-top:10px;" >
+                            <p class="h2" style="Margin:0;font-size:18px;font-weight:bold;Margin-bottom:12px;" >
+                              1/2 Two-Column
+                            </p>
+                            <p style="Margin:0;font-size:14px;Margin-bottom:12px;">
+                              Maecenas sed ante pellentesque, posuere leo id, eleifend dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                            </p>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <!--[if (gte mso 9)|(IE)]>
+              </td><td width="50%" valign="top" style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
+              <![endif]-->
+              <div class="column-50" style="width:100%;max-width:300px;display:inline-block;vertical-align:top;" >
+                <table width="100%" style="border-spacing:0;font-family:sans-serif;color:#333333;" >
+                  <tr>
+                    <td class="inner" style="padding-top:10px;padding-bottom:10px;padding-right:10px;padding-left:10px;" >
+                      <table class="contents" style="border-spacing:0;font-family:sans-serif;color:#333333;width:100%;font-size:14px;text-align:left;" >
+                        <tr>
+                          <td style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
+                            <img src="http://asset.uie.com/emails/img/sample_images/doggy.jpg" width="280" alt="image" style="border-width:0;width:100%;max-width:280px;height:auto;" />
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="text" style="padding-bottom:0;padding-right:0;padding-left:0;padding-top:10px;" >
+                            <p class="h2" style="Margin:0;font-size:18px;font-weight:bold;Margin-bottom:12px;" >
+                              1/2 Two-Column
+                            </p>
+                            Maecenas sed ante pellentesque, posuere leo id, eleifend dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <!--[if (gte mso 9)|(IE)]>
+              </td>
+              </tr>
+              </table>
+              <![endif]-->
+            </td>
+          </tr>
+
+          <tr>
+            <td class="three-column" style="padding-right:0;padding-left:0;text-align:left;font-size:0;padding-top:10px;padding-bottom:10px;" >
+              <!--[if (gte mso 9)|(IE)]>
+              <table width="100%" style="border-spacing:0;font-family:sans-serif;color:#333333;" >
+              <tr>
+              <td width="200" valign="top" style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
+              <![endif]-->
+              <table class="column" style="border-spacing:0;font-family:sans-serif;color:#333333;width:100%;max-width:200px;display:inline-block;vertical-align:top;" >
+                <tr>
+                  <td class="inner" style="padding-top:10px;padding-bottom:10px;padding-right:10px;padding-left:10px;" >
+                    <table class="contents" style="border-spacing:0;font-family:sans-serif;color:#333333;width:100%;font-size:14px;text-align:left;" >
+                      <tr>
+                        <td style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
+                          <img src="http://asset.uie.com/emails/img/sample_images/hedgehog.jpg" width="180" alt="image" style="border-width:0;width:100%;max-width:180px;height:auto;" />
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="text" style="padding-bottom:0;padding-right:0;padding-left:0;padding-top:10px;" >
+                          <p class="h2" style="Margin:0;font-size:18px;font-weight:bold;Margin-bottom:12px;" >
+                            1/3 Three-Column
+                          </p>
+                          Scelerisque congue eros eu posuere. Praesent in felis ut velit pretium lobortis rhoncus ut erat.
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+              <!--[if (gte mso 9)|(IE)]>
+              </td><td width="200" valign="top" style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
+              <![endif]-->
+              <table class="column" style="border-spacing:0;font-family:sans-serif;color:#333333;width:100%;max-width:200px;display:inline-block;vertical-align:top;" >
+                <tr>
+                  <td class="inner" style="padding-top:10px;padding-bottom:10px;padding-right:10px;padding-left:10px;" >
+                    <table class="contents" style="border-spacing:0;font-family:sans-serif;color:#333333;width:100%;font-size:14px;text-align:left;" >
+                      <tr>
+                        <td style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
+                          <img src="http://asset.uie.com/emails/img/sample_images/hedgehog.jpg" width="180" alt="image" style="border-width:0;width:100%;max-width:180px;height:auto;" />
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="text" style="padding-bottom:0;padding-right:0;padding-left:0;padding-top:10px;" >
+                          <p class="h2" style="Margin:0;font-size:18px;font-weight:bold;Margin-bottom:12px;" >
+                            1/3 Three-Column
+                          </p>
+                          Scelerisque congue eros eu posuere. Praesent in felis ut velit pretium lobortis rhoncus ut erat.
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+              <!--[if (gte mso 9)|(IE)]>
+              </td><td width="200" valign="top" style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
+              <![endif]-->
+              <table class="column" style="border-spacing:0;font-family:sans-serif;color:#333333;width:100%;max-width:200px;display:inline-block;vertical-align:top;" >
+                <tr>
+                  <td class="inner" style="padding-top:10px;padding-bottom:10px;padding-right:10px;padding-left:10px;" >
+                    <table class="contents" style="border-spacing:0;font-family:sans-serif;color:#333333;width:100%;font-size:14px;text-align:left;" >
+                      <tr>
+                        <td style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
+                          <img src="http://asset.uie.com/emails/img/sample_images/hedgehog.jpg" width="180" alt="image" style="border-width:0;width:100%;max-width:180px;height:auto;" />
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="text" style="padding-bottom:0;padding-right:0;padding-left:0;padding-top:10px;" >
+                          <p class="h2" style="Margin:0;font-size:18px;font-weight:bold;Margin-bottom:12px;" >
+                            1/3 Three-Column
+                          </p>
+                          Scelerisque congue eros eu posuere. Praesent in felis ut velit pretium lobortis rhoncus ut erat.
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+              <!--[if (gte mso 9)|(IE)]>
+              </td>
+              </tr>
+              </table>
+              <![endif]-->
+            </td>
+          </tr>
+
+          <tr>
+            <td class="four-column" style="padding-right:0;padding-left:0;text-align:left;font-size:0;padding-top:10px;padding-bottom:10px;" >
+              <!--[if (gte mso 9)|(IE)]>
+              <table width="100%" style="border-spacing:0;font-family:sans-serif;color:#333333;" >
+              <tr>
+              <td width="150" valign="top" style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
+              <![endif]-->
+              <table class="column" style="border-spacing:0;font-family:sans-serif;color:#333333;width:100%;max-width:150px;display:inline-block;vertical-align:top;" >
+                <tr>
+                  <td class="inner" style="padding-top:10px;padding-bottom:10px;padding-right:10px;padding-left:10px;" >
+                    <table class="contents" style="border-spacing:0;font-family:sans-serif;color:#333333;width:100%;font-size:14px;text-align:left;" >
+                      <tr>
+                        <td style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
+                          <img src="http://asset.uie.com/emails/img/sample_images/piggy.jpg" width="130" alt="image" style="border-width:0;width:100%;max-width:130px;height:auto;" />
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="text" style="padding-bottom:0;padding-right:0;padding-left:0;padding-top:10px;" >
+                          <p class="h2" style="Margin:0;font-size:18px;font-weight:bold;Margin-bottom:12px;" >
+                            1/4 Four-Column
+                          </p>
+                          Scelerisque congue eros eu posuere. Praesent in felis ut velit pretium lobortis rhoncus ut erat.
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+              <!--[if (gte mso 9)|(IE)]>
+              </td><td width="150" valign="top" style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
+              <![endif]-->
+              <table class="column" style="border-spacing:0;font-family:sans-serif;color:#333333;width:100%;max-width:150px;display:inline-block;vertical-align:top;" >
+                <tr>
+                  <td class="inner" style="padding-top:10px;padding-bottom:10px;padding-right:10px;padding-left:10px;" >
+                    <table class="contents" style="border-spacing:0;font-family:sans-serif;color:#333333;width:100%;font-size:14px;text-align:left;" >
+                      <tr>
+                        <td style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
+                          <img src="http://asset.uie.com/emails/img/sample_images/piggy.jpg" width="130" alt="image" style="border-width:0;width:100%;max-width:130px;height:auto;" />
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="text" style="padding-bottom:0;padding-right:0;padding-left:0;padding-top:10px;" >
+                          <p class="h2" style="Margin:0;font-size:18px;font-weight:bold;Margin-bottom:12px;" >
+                            1/4 Four-Column
+                          </p>
+                          Scelerisque congue eros eu posuere. Praesent in felis ut velit pretium lobortis rhoncus ut erat.
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+              <!--[if (gte mso 9)|(IE)]>
+              </td><td width="150" valign="top" style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
+              <![endif]-->
+              <table class="column" style="border-spacing:0;font-family:sans-serif;color:#333333;width:100%;max-width:150px;display:inline-block;vertical-align:top;" >
+                <tr>
+                  <td class="inner" style="padding-top:10px;padding-bottom:10px;padding-right:10px;padding-left:10px;" >
+                    <table class="contents" style="border-spacing:0;font-family:sans-serif;color:#333333;width:100%;font-size:14px;text-align:left;" >
+                      <tr>
+                        <td style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
+                          <img src="http://asset.uie.com/emails/img/sample_images/piggy.jpg" width="130" alt="image" style="border-width:0;width:100%;max-width:130px;height:auto;" />
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="text" style="padding-bottom:0;padding-right:0;padding-left:0;padding-top:10px;" >
+                          <p class="h2" style="Margin:0;font-size:18px;font-weight:bold;Margin-bottom:12px;" >
+                            1/4 Four-Column
+                          </p>
+                          Scelerisque congue eros eu posuere. Praesent in felis ut velit pretium lobortis rhoncus ut erat.
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+              <!--[if (gte mso 9)|(IE)]>
+              </td><td width="150" valign="top" style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
+              <![endif]-->
+              <table class="column" style="border-spacing:0;font-family:sans-serif;color:#333333;width:100%;max-width:150px;display:inline-block;vertical-align:top;" >
+                <tr>
+                  <td class="inner" style="padding-top:10px;padding-bottom:10px;padding-right:10px;padding-left:10px;" >
+                    <table class="contents" style="border-spacing:0;font-family:sans-serif;color:#333333;width:100%;font-size:14px;text-align:left;" >
+                      <tr>
+                        <td style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
+                          <img src="http://asset.uie.com/emails/img/sample_images/piggy.jpg" width="130" alt="image" style="border-width:0;width:100%;max-width:130px;height:auto;" />
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="text" style="padding-bottom:0;padding-right:0;padding-left:0;padding-top:10px;" >
+                          <p class="h2" style="Margin:0;font-size:18px;font-weight:bold;Margin-bottom:12px;" >
+                            1/4 Four-Column
+                          </p>
+                          Scelerisque congue eros eu posuere. Praesent in felis ut velit pretium lobortis rhoncus ut erat.
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+              <!--[if (gte mso 9)|(IE)]>
+              </td>
+              </tr>
+              </table>
+              <![endif]-->
+            </td>
+          </tr>
+
+          <tr>
+            <td class="five-column" style="padding-right:0;padding-left:0;text-align:left;font-size:0;padding-top:10px;padding-bottom:10px;" >
+              <!--[if (gte mso 9)|(IE)]>
+              <table width="100%" style="border-spacing:0;font-family:sans-serif;color:#333333;" >
+              <tr>
+              <td width="120" valign="top" style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
+              <![endif]-->
+              <table class="column" style="border-spacing:0;font-family:sans-serif;color:#333333;width:100%;max-width:120px;display:inline-block;vertical-align:top;" >
+                <tr>
+                  <td class="inner" style="padding-top:10px;padding-bottom:10px;padding-right:10px;padding-left:10px;" >
+                    <table class="contents" style="border-spacing:0;font-family:sans-serif;color:#333333;width:100%;font-size:14px;text-align:left;" >
+                      <tr>
+                        <td style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
+                          <img src="http://asset.uie.com/emails/img/sample_images/ducky.jpg" width="100" alt="image" style="border-width:0;width:100%;max-width:100px;height:auto;" />
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="text" style="padding-bottom:0;padding-right:0;padding-left:0;padding-top:10px;" >
+                          <p class="h2" style="Margin:0;font-size:18px;font-weight:bold;Margin-bottom:12px;" >
+                            1/5 Five-Column
+                          </p>
+                          Scelerisque congue eros eu posuere. Praesent in felis ut velit pretium lobortis rhoncus ut erat.
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+              <!--[if (gte mso 9)|(IE)]>
+              </td><td width="120" valign="top" style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
+              <![endif]-->
+              <table class="column" style="border-spacing:0;font-family:sans-serif;color:#333333;width:100%;max-width:120px;display:inline-block;vertical-align:top;" >
+                <tr>
+                  <td class="inner" style="padding-top:10px;padding-bottom:10px;padding-right:10px;padding-left:10px;" >
+                    <table class="contents" style="border-spacing:0;font-family:sans-serif;color:#333333;width:100%;font-size:14px;text-align:left;" >
+                      <tr>
+                        <td style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
+                          <img src="http://asset.uie.com/emails/img/sample_images/ducky.jpg" width="100" alt="image" style="border-width:0;width:100%;max-width:100px;height:auto;" />
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="text" style="padding-bottom:0;padding-right:0;padding-left:0;padding-top:10px;" >
+                          <p class="h2" style="Margin:0;font-size:18px;font-weight:bold;Margin-bottom:12px;" >
+                            1/5 Five-Column
+                          </p>
+                          Scelerisque congue eros eu posuere. Praesent in felis ut velit pretium lobortis rhoncus ut erat.
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+              <!--[if (gte mso 9)|(IE)]>
+              </td><td width="120" valign="top" style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
+              <![endif]-->
+              <table class="column" style="border-spacing:0;font-family:sans-serif;color:#333333;width:100%;max-width:120px;display:inline-block;vertical-align:top;" >
+                <tr>
+                  <td class="inner" style="padding-top:10px;padding-bottom:10px;padding-right:10px;padding-left:10px;" >
+                    <table class="contents" style="border-spacing:0;font-family:sans-serif;color:#333333;width:100%;font-size:14px;text-align:left;" >
+                      <tr>
+                        <td style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
+                          <img src="http://asset.uie.com/emails/img/sample_images/ducky.jpg" width="100" alt="image" style="border-width:0;width:100%;max-width:100px;height:auto;" />
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="text" style="padding-bottom:0;padding-right:0;padding-left:0;padding-top:10px;" >
+                          <p class="h2" style="Margin:0;font-size:18px;font-weight:bold;Margin-bottom:12px;" >
+                            1/5 Five-Column
+                          </p>
+                          Scelerisque congue eros eu posuere. Praesent in felis ut velit pretium lobortis rhoncus ut erat.
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+              <!--[if (gte mso 9)|(IE)]>
+              </td><td width="120" valign="top" style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
+              <![endif]-->
+              <table class="column" style="border-spacing:0;font-family:sans-serif;color:#333333;width:100%;max-width:120px;display:inline-block;vertical-align:top;" >
+                <tr>
+                  <td class="inner" style="padding-top:10px;padding-bottom:10px;padding-right:10px;padding-left:10px;" >
+                    <table class="contents" style="border-spacing:0;font-family:sans-serif;color:#333333;width:100%;font-size:14px;text-align:left;" >
+                      <tr>
+                        <td style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
+                          <img src="http://asset.uie.com/emails/img/sample_images/ducky.jpg" width="100" alt="image" style="border-width:0;width:100%;max-width:100px;height:auto;" />
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="text" style="padding-bottom:0;padding-right:0;padding-left:0;padding-top:10px;" >
+                          <p class="h2" style="Margin:0;font-size:18px;font-weight:bold;Margin-bottom:12px;" >
+                            1/5 Five-Column
+                          </p>
+                          Scelerisque congue eros eu posuere. Praesent in felis ut velit pretium lobortis rhoncus ut erat.
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+              <!--[if (gte mso 9)|(IE)]>
+              </td><td width="120" valign="top" style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
+              <![endif]-->
+              <table class="column" style="border-spacing:0;font-family:sans-serif;color:#333333;width:100%;max-width:120px;display:inline-block;vertical-align:top;" >
+                <tr>
+                  <td class="inner" style="padding-top:10px;padding-bottom:10px;padding-right:10px;padding-left:10px;" >
+                    <table class="contents" style="border-spacing:0;font-family:sans-serif;color:#333333;width:100%;font-size:14px;text-align:left;" >
+                      <tr>
+                        <td style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
+                          <img src="http://asset.uie.com/emails/img/sample_images/ducky.jpg" width="100" alt="image" style="border-width:0;width:100%;max-width:100px;height:auto;" />
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="text" style="padding-bottom:0;padding-right:0;padding-left:0;padding-top:10px;" >
+                          <p class="h2" style="Margin:0;font-size:18px;font-weight:bold;Margin-bottom:12px;" >
+                            1/5 Five-Column
+                          </p>
+                          Scelerisque congue eros eu posuere. Praesent in felis ut velit pretium lobortis rhoncus ut erat.
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+              <!--[if (gte mso 9)|(IE)]>
+              </td>
+              </tr>
+              </table>
+              <![endif]-->
+            </td>
+          </tr>
+
+          <tr>
+            <td class="multi-column" style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;text-align:left;font-size:0;" >
+            <!--[if (gte mso 9)|(IE)]>
+            <table width="100%" style="border-spacing:0;font-family:sans-serif;color:#333333;" >
+            <tr>
+            <td width="40%" valign="top" style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
+            <![endif]-->
+              <div class="column-40" style="width:100%;max-width:240px;display:inline-block;vertical-align:top;" >
+                <table width="100%" style="border-spacing:0;font-family:sans-serif;color:#333333;" >
+                  <tr>
+                    <td class="inner" style="padding-top:10px;padding-bottom:10px;padding-right:10px;padding-left:10px;" >
+                      <table class="contents" style="border-spacing:0;font-family:sans-serif;color:#333333;width:100%;font-size:14px;text-align:left;" >
+                        <tr>
+                          <td style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
+                            <img src="http://asset.uie.com/emails/img/sample_images/bandit.jpg" width="240" alt="image" style="border-width:0;width:100%;max-width:600px;height:auto;" />
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="text" style="padding-bottom:0;padding-right:0;padding-left:0;padding-top:10px;" >
+                            <p class="h2" style="Margin:0;font-size:18px;font-weight:bold;Margin-bottom:12px;" >
+                              40% Multi-Column
+                            </p>
+                            Maecenas sed ante pellentesque, posuere leo id, eleifend dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <!--[if (gte mso 9)|(IE)]>
+              </td><td width="60%" valign="top" style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
+              <![endif]-->
+              <div class="column-60" style="width:100%;max-width:360px;display:inline-block;vertical-align:top;" >
+                <table width="100%" style="border-spacing:0;font-family:sans-serif;color:#333333;" >
+                  <tr>
+                    <td class="inner" style="padding-top:10px;padding-bottom:10px;padding-right:10px;padding-left:10px;" >
+                      <table class="contents" style="border-spacing:0;font-family:sans-serif;color:#333333;width:100%;font-size:14px;text-align:left;" >
+                        <tr>
+                          <td style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
+                            <img src="http://asset.uie.com/emails/img/sample_images/bandit.jpg" width="360" alt="image" style="border-width:0;width:100%;max-width:600px;height:auto;" />
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="text" style="padding-bottom:0;padding-right:0;padding-left:0;padding-top:10px;" >
+                            <p class="h2" style="Margin:0;font-size:18px;font-weight:bold;Margin-bottom:12px;" >
+                              60% Multi-Column
+                            </p>
+                            Maecenas sed ante pellentesque, posuere leo id, eleifend dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <!--[if (gte mso 9)|(IE)]>
+              </td>
+              </tr>
+              </table>
+              <![endif]-->
+            </td>
+          </tr>
+
+          <tr>
+            <td class="multi-column" style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;text-align:left;font-size:0;" >
+            <!--[if (gte mso 9)|(IE)]>
+            <table width="100%" style="border-spacing:0;font-family:sans-serif;color:#333333;" >
+            <tr>
+            <td width="30%" valign="top" style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
+            <![endif]-->
+              <div class="column-30" style="width:100%;max-width:180px;display:inline-block;vertical-align:top;" >
+                <table width="100%" style="border-spacing:0;font-family:sans-serif;color:#333333;" >
+                  <tr>
+                    <td class="inner" style="padding-top:10px;padding-bottom:10px;padding-right:10px;padding-left:10px;" >
+                      <table class="contents" style="border-spacing:0;font-family:sans-serif;color:#333333;width:100%;font-size:14px;text-align:left;" >
+                        <tr>
+                          <td style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
+                            <img src="http://asset.uie.com/emails/img/sample_images/bandit.jpg" width="180" alt="image" style="border-width:0;width:100%;max-width:600px;height:auto;" />
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="text" style="padding-bottom:0;padding-right:0;padding-left:0;padding-top:10px;" >
+                            <p class="h2" style="Margin:0;font-size:18px;font-weight:bold;Margin-bottom:12px;" >
+                              30% Multi-Column
+                            </p>
+                            Maecenas sed ante pellentesque, posuere leo id, eleifend dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <!--[if (gte mso 9)|(IE)]>
+              </td><td width="70%" valign="top" style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
+              <![endif]-->
+              <div class="column-70" style="width:100%;max-width:420px;display:inline-block;vertical-align:top;" >
+                <table width="100%" style="border-spacing:0;font-family:sans-serif;color:#333333;" >
+                  <tr>
+                    <td class="inner" style="padding-top:10px;padding-bottom:10px;padding-right:10px;padding-left:10px;" >
+                      <table class="contents" style="border-spacing:0;font-family:sans-serif;color:#333333;width:100%;font-size:14px;text-align:left;" >
+                        <tr>
+                          <td style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
+                            <img src="http://asset.uie.com/emails/img/sample_images/bandit.jpg" width="420" alt="image" style="border-width:0;width:100%;max-width:600px;height:auto;" />
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="text" style="padding-bottom:0;padding-right:0;padding-left:0;padding-top:10px;" >
+                            <p class="h2" style="Margin:0;font-size:18px;font-weight:bold;Margin-bottom:12px;" >
+                              70% Multi-Column
+                            </p>
+                            Maecenas sed ante pellentesque, posuere leo id, eleifend dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <!--[if (gte mso 9)|(IE)]>
+              </td>
+              </tr>
+              </table>
+              <![endif]-->
+            </td>
+          </tr>
+
+          <tr>
+            <td class="multi-column" style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;text-align:left;font-size:0;" >
+            <!--[if (gte mso 9)|(IE)]>
+            <table width="100%" style="border-spacing:0;font-family:sans-serif;color:#333333;" >
+            <tr>
+            <td width="20%" valign="top" style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
+            <![endif]-->
+              <div class="column-20" style="width:100%;max-width:120px;display:inline-block;vertical-align:top;" >
+                <table width="100%" style="border-spacing:0;font-family:sans-serif;color:#333333;" >
+                  <tr>
+                    <td class="inner" style="padding-top:10px;padding-bottom:10px;padding-right:10px;padding-left:10px;" >
+                      <table class="contents" style="border-spacing:0;font-family:sans-serif;color:#333333;width:100%;font-size:14px;text-align:left;" >
+                        <tr>
+                          <td style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
+                            <img src="http://asset.uie.com/emails/img/sample_images/bandit.jpg" width="120" alt="image" style="border-width:0;width:100%;max-width:600px;height:auto;" />
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="text" style="padding-bottom:0;padding-right:0;padding-left:0;padding-top:10px;" >
+                            <p class="h2" style="Margin:0;font-size:18px;font-weight:bold;Margin-bottom:12px;" >
+                              20% Multi-Column
+                            </p>
+                            Maecenas sed ante pellentesque, posuere leo id, eleifend dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <!--[if (gte mso 9)|(IE)]>
+              </td><td width="80%" valign="top" style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
+              <![endif]-->
+              <div class="column-80" style="width:100%;max-width:480px;display:inline-block;vertical-align:top;" >
+                <table width="100%" style="border-spacing:0;font-family:sans-serif;color:#333333;" >
+                  <tr>
+                    <td class="inner" style="padding-top:10px;padding-bottom:10px;padding-right:10px;padding-left:10px;" >
+                      <table class="contents" style="border-spacing:0;font-family:sans-serif;color:#333333;width:100%;font-size:14px;text-align:left;" >
+                        <tr>
+                          <td style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
+                            <img src="http://asset.uie.com/emails/img/sample_images/bandit.jpg" width="480" alt="image" style="border-width:0;width:100%;max-width:600px;height:auto;" />
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="text" style="padding-bottom:0;padding-right:0;padding-left:0;padding-top:10px;" >
+                            <p class="h2" style="Margin:0;font-size:18px;font-weight:bold;Margin-bottom:12px;" >
+                              80% Multi-Column
+                            </p>
+                            Maecenas sed ante pellentesque, posuere leo id, eleifend dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <!--[if (gte mso 9)|(IE)]>
+              </td>
+              </tr>
+              </table>
+              <![endif]-->
+            </td>
+          </tr>
+
+
+        </table>
+        <!--[if (gte mso 9)|(IE)]>
+        </td>
+        </tr>
+        </table>
+        <![endif]-->
+      </div>
+    </center>
+  </body>
+</html>

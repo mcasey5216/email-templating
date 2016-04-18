@@ -1,0 +1,54 @@
+//output:half-split.html
+//{
+    name: 'Half Split - Two Columns'
+  }
+  
+- var textColor = "#333333"
+- var imageSource1 = "http://asset.uie.com/emails/img/sample_images/doggy.jpg"
+- var imageAlt1 = "Image"
+- var headerText1 = "1/2 Two-Column"
+- var bodyText1 = "Maecenas sed ante pellentesque, posuere leo id, eleifend dolor."
+- var imageSource2 = "http://asset.uie.com/emails/img/sample_images/doggy.jpg"
+- var imageAlt2 = "Image"
+- var headerText2 = "1/2 Two-Column"
+- var bodyText2 = "Maecenas sed ante pellentesque, posuere leo id, eleifend dolor."
+
+tr
+  td(style"padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;text-align:left;font-size:0;")
+    <!--[if (gte mso 9)|(IE)]>
+    <table width="100%" style="border-spacing:0;font-family:sans-serif;color:#{textColor};">
+    <tr>
+    <td width="50%" valign="top" style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;">
+    <![endif]-->
+    div(style="width:100%;max-width:300px;display:inline-block;vertical-align:top;")
+      table(width='100%' style="border-spacing:0;font-family:sans-serif;color:#{textColor};")
+        tr
+          td(style="padding-top:10px;padding-bottom:10px;padding-right:10px;padding-left:10px;")
+            table(style="border-spacing:0;font-family:sans-serif;color:#333333;width:100%;font-size:14px;text-align:left;")
+              tr
+                td(style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;")
+                  img(src="#{imageSource1}" width='280' alt='#{imageAlt1}')
+              tr
+                td(style="padding-bottom:0;padding-right:0;padding-left:0;padding-top:10px;")
+                  p.h2(style="Margin:0;font-size:18px;font-weight:bold;Margin-bottom:12px;") #{headerText1}
+                  p(style="Margin:0;font-size:14px;Margin-bottom:12px;") #{bodyText1}
+    <!--[if (gte mso 9)|(IE)]>
+    </td><td width="50%" valign="top" style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;">
+    <![endif]-->
+    div(style="width:100%;max-width:300px;display:inline-block;vertical-align:top;")
+      table(width='100%' style="border-spacing:0;font-family:sans-serif;color:#{textColor};")
+        tr
+          td(style="padding-top:10px;padding-bottom:10px;padding-right:10px;padding-left:10px;")
+            table(style="border-spacing:0;font-family:sans-serif;color:#333333;width:100%;font-size:14px;text-align:left;")
+              tr
+                td(style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;")
+                  img(src="#{imageSource2}" width='280' alt='#{imageAlt2}')
+              tr
+                td(style="padding-bottom:0;padding-right:0;padding-left:0;padding-top:10px;")
+                  p.h2(style="Margin:0;font-size:18px;font-weight:bold;Margin-bottom:12px;") #{headerText2}
+                  p(style="Margin:0;font-size:14px;Margin-bottom:12px;") #{bodyText2}
+    <!--[if (gte mso 9)|(IE)]>
+    </td>
+    </tr>
+    </table>
+    <![endif]-->
