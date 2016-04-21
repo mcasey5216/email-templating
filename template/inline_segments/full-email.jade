@@ -37,6 +37,8 @@
 - var bodyText2 = "Maecenas sed ante pellentesque, posuere leo id, eleifend dolor."
 
 //- three column variables
+- var thirdSpiltTable = "width:100%;max-width:200px;display:inline-block;vertical-align:top;"
+
 - var imageSource1 = "http://asset.uie.com/emails/img/sample_images/hedgehog.jpg"
 - var imageAlt1 = "Image"
 - var headerText1 = "1/3 Three-Column"
@@ -103,3 +105,55 @@ tr
     <![endif]-->
     
 //- three columns
+tr
+  td(style="#{initialtd}")
+    <!--[if (gte mso 9)|(IE)]>
+    <table width="100%" style="#{table};">
+    <tr>
+    <td width="200" valign="top" style="#{zeropxPadding}">
+    <![endif]-->
+    table(style="#{table}#{thirdSpiltTable}")
+      tr
+        td(style="#{tenpxPadding}")
+          table(style="#{table}#{contents}")
+            tr
+              td(style="zeropxPadding")
+               img(src="#{imageSource1}" width="180" alt="#{imageAlt1}" style="#{squareImage}")
+            tr
+              td(style="#{text}")
+                p.h2(style="#{h2}") #{headerText2}
+                p(style="#{p}") #{bodyText2}
+    <!--[if (gte mso 9)|(IE)]>
+    </td><td width="200" valign="top" style="#{zeropxPadding}">
+    <![endif]-->
+    table(style="#{table}#{thirdSpiltTable}")
+      tr
+        td(style="#{tenpxPadding}")
+          table(style="#{table}#{contents}")
+            tr
+              td(style="zeropxPadding")
+               img(src="#{imageSource1}" width="180" alt="#{imageAlt1}" style="#{squareImage}")
+            tr
+              td(style="#{text}")
+                p.h2(style="#{h2}") #{headerText2}
+                p(style="#{p}") #{bodyText2}
+    <!--[if (gte mso 9)|(IE)]>
+    </td><td width="200" valign="top" style="#{zeropxPadding}">
+    <![endif]-->
+    table(style="#{table}#{thirdSpiltTable}")
+      tr
+        td(style="#{tenpxPadding}")
+          table(style="#{table}#{contents}")
+            tr
+              td(style="zeropxPadding")
+               img(src="#{imageSource1}" width="180" alt="#{imageAlt1}" style="#{squareImage}")
+            tr
+              td(style="#{text}")
+                p.h2(style="#{h2}") #{headerText2}
+                p(style="#{p}") #{bodyText2}
+    <!--[if (gte mso 9)|(IE)]>
+    </td>
+    </tr>
+    </table>
+    <![endif]-->
+              
