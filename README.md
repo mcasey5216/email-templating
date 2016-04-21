@@ -1,5 +1,7 @@
 # Email Templating
 
+note: some of this content is specific to the needs and application of UIE.
+
 ## Original Objectives
 
 - Make a general template that is easy to reuse and responsive
@@ -35,7 +37,7 @@ Find an alternative to plain `HTML` that is still easy to convert back once its 
 
 It has the potential to make the code easily reusable, and less prone to mistakes/bugs.
 
-### Step 3 - Practice implementation
+### Step 3 - Practice Implementation
 
 Styles are stored in variables, common variables like colors can be stored individually.
 
@@ -49,7 +51,7 @@ Also multiple variables can be added to the style attribute as if adding multipl
       td(style="#{tenpxPadding}")
         table(style="#{table}#{contents}")
 
-The benefit is that there is no external inliner program necessary to provide the format necessary to email templates, yet you still get the necessary convenience of a stylesheet that changes to properties of multiple tags at once.
+The benefit is that there is no external inliner program needed to provide the inline `CSS` format necessary to send a viable `HTML` email, yet you still get the convenience of a stylesheet.
 
 
 ## Possible Phases
@@ -73,10 +75,10 @@ Phase 3: Minimizing CSS code / steps
 - Creating Sass libraries
 - Automate CSS inlining
 
-(edit): CSS automation is replaced by styles stored in variables. Sass will probably not be necessary in this track.  4/21/16
+(edit): CSS automation is replaced by styles stored in variables. Sass will probably not be necessary on this track.  4/21/16
 
 Phase 4: Develop an Interface
 - Form fields
 - Read markdown from a file (not copy/paste)
-- Interact with blog post/uie.com to capture information (totd, article)
+- Interact with blogs and uie.com to capture information (totd, article)
 	- Live updates before email and blog posts
