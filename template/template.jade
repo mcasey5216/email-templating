@@ -1,3 +1,8 @@
+//output:template-complied.html
+//{
+    name: 'Full Email'
+  }
+
 doctype html
 html(lang="en" xmlns="http://www.w3.org/1999/xhtml")
   head
@@ -21,69 +26,53 @@ html(lang="en" xmlns="http://www.w3.org/1999/xhtml")
         <tr>
         <td>
         <![endif]-->
-
-        - var nested = "A nested subject line."
-        
-        - var headerSource = "http://asset.uie.com/emails/img/sample_images/sloth_header.png"
-        - var headerAltText = "Header"
-        
-        - var fullWidthTextHeader = "100% Width Text"
-        - var fullWidthTextBody = "Maecenas sed ante pellentesque, posuere leo id, eleifend dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent laoreet malesuada cursus. Maecenas scelerisque congue eros eu posuere. Praesent in felis ut velit pretium lobortis rhoncus ut erat."
-        
-        - var twoColumnSource = "http://asset.uie.com/emails/img/sample_images/doggy.jpg"
-        - var twoColumnAltText = "image"
-        
-        - var subHeaderText = "I am the opening text header"
-        - var openingText = "I am the opening text body"
-        - var threeColumnImageSource = "img/doggy.jpg"
-        - var twoColumnText = "I am the two column text"
-        - var threeColumnText = "I am the three column text"
-      
-        // nested
-        table.outer(align='center')
+        table.outer(align="center")
+          
+          //- NESTED
           tr
-            td.multi-column
+            td.nested
               <!--[if (gte mso 9)|(IE)]>
               <table width="100%">
               <tr>
-              <td width="80%" valign="top">
+              <td width="70%" valign="top">
               <![endif]-->
-              div.column-80
+              div.column-75
                 table(width="100%")
-                  tr 
-                    td.inner
-                      table.contents 
+                  tr
+                    td.inner-nested
+                      table.contents
                         tr
-                          td.text-nested #{nested}
+                          td.nested-text A nested subject line
               <!--[if (gte mso 9)|(IE)]>
-              </td><td width="20%" valign="top">
+              </td><td width="25%" valign="top">
               <![endif]-->
-              div.column-80
+              div.column-25
                 table(width="100%")
-                  tr 
-                    td.inner
-                      table.contents 
+                  tr
+                    td.inner-nested
+                      table.contents
                         tr
-                          td.text-nested
-                            a(href="*|ARCHIVE|*") View in Browser
-          // header
+                          td.nested-text
+                            a View in Browser
+              <!--[if (gte mso 9)|(IE)]>
+              </td>
+              </tr>
+              </table>
+              <![endif]-->
+              
           tr
             td
               table.outer(align="center")
                 tr
                   td.full-width-image
-                    img(src="#{headerSource}" width='600' alt="#{headerAltText}")
-                    
-          //one-column
+                    img(src="http://asset.uie.com/emails/img/sample_images/sloth_header.png" width="600" alt="header")
           tr
             td.one-column
               table(width="100%")
                 tr
-                  td.inner.contents 
-                    p.h1 #{fullWidthTextHeader}
-                    p #{fullWidthTextBody}
-          
-          //two-column 50/50 spilt
+                  td.inner.contents
+                    p.h1 100% Width Text 
+                    p.copy Maecenas sed ante pellentesque, posuere leo id, eleifend dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent laoreet malesuada cursus. Maecenas scelerisque congue eros eu posuere. Praesent in felis ut velit pretium lobortis rhoncus ut erat.
           tr
             td.two-column
               <!--[if (gte mso 9)|(IE)]>
@@ -91,219 +80,35 @@ html(lang="en" xmlns="http://www.w3.org/1999/xhtml")
               <tr>
               <td width="50%" valign="top">
               <![endif]-->
-              div.column
-                table(width='100%')
+              div.column-50
+                table(width="100%")
                   tr
                     td.inner
                       table.contents
                         tr
                           td
-                            img(src="#{twoColumnSource}" width='280' alt='image')
+                            img(src="http://asset.uie.com/emails/img/sample_images/doggy.jpg" width="280" alt="image")
                         tr
-                          td.text 
-                            p.h2 1/2 Two Column
-                            span #{twoColumnText}
+                          td.text
+                            p.h2 1/2 Two-Column
+                            p.copy Maecenas sed ante pellentesque, posuere leo id, eleifend dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
               <!--[if (gte mso 9)|(IE)]>
               </td><td width="50%" valign="top">
               <![endif]-->
-              div.column
-                table(width='100%')
+              div.column-50
+                table(width="100%")
                   tr
                     td.inner
                       table.contents
                         tr
                           td
-                            img(src="#{twoColumnSource}" width='280' alt='image')
+                            img(src="http://asset.uie.com/emails/img/sample_images/doggy.jpg" width="280" alt="image")
                         tr
-                          td.text 
-                            p.h2 1/2 Two Column
-                            span #{twoColumnText}
+                          td.text
+                            p.h2 1/2 Two-Column
+                            p.copy Maecenas sed ante pellentesque, posuere leo id, eleifend dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
               <!--[if (gte mso 9)|(IE)]>
               </td>
               </tr>
               </table>
-              <![endif]-->
-          
-          //three column
-          tr
-            td.three-column
-              <!--[if (gte mso 9)|(IE)]>
-              <table width="100%">
-              <tr>
-              <td width="200" valign="top">
-              <![endif]-->
-              table.column
-                tr
-                  td.inner
-                    table.contents
-                      tr
-                        td
-                          img(src="#{threeColumnImageSource}" width="180" alt="image")
-                      tr
-                        p.h2 1/3 Three Column
-                        td.text #{threeColumnText}
-              <!--[if (gte mso 9)|(IE)]>
-              </td><td width="200" valign="top">
-              <![endif]-->
-              table.column
-                tr
-                  td.inner
-                    table.contents
-                      tr
-                        td
-                          img(src="#{threeColumnImageSource}" width="180" alt="image")
-                      tr
-                        p.h2 1/3 Three Column
-                        td.text #{threeColumnText}
-              <!--[if (gte mso 9)|(IE)]>
-              </td><td width="200" valign="top">
-              <![endif]-->
-              table.column
-                tr
-                  td.inner
-                    table.contents
-                      tr
-                        td
-                          img(src="#{threeColumnImageSource}" width="180" alt="image")
-                      tr
-                        p.h2 1/3 Three Column
-                        td.text #{threeColumnText}
-              <!--[if (gte mso 9)|(IE)]>
-              </td>
-              </tr>
-              </table>
-              <![endif]-->
-          
-          //four column
-          tr
-            td.four-column
-              <!--[if (gte mso 9)|(IE)]>
-              <table width="100%">
-              <tr>
-              <td width="150" valign="top">
-              <![endif]-->
-              table.column
-                tr
-                  td.inner
-                    table.contents
-                      tr
-                        td
-                          img(src="#{fourColumnImageSource}" width="130" alt="image")
-                      tr
-                        td.text 
-                        p.h2 1/4 Four Column
-                        span #{fourColumnText}
-              <!--[if (gte mso 9)|(IE)]>
-              </td><td width="150" valign="top">
-              <![endif]-->
-              table.column
-                tr
-                  td.inner
-                    table.contents
-                      tr
-                        td
-                          img(src="#{fourColumnImageSource}" width="130" alt="image")
-                      tr
-                        td.text 
-                        p.h2 1/4 Four Column
-                        span #{fourColumnText}
-              <!--[if (gte mso 9)|(IE)]>
-              </td><td width="150" valign="top">
-              <![endif]-->
-              table.column
-                tr
-                  td.inner
-                    table.contents
-                      tr
-                        td
-                          img(src="#{fourColumnImageSource}" width="130" alt="image")
-                      tr
-                        td.text 
-                        p.h2 1/4 Four Column
-                        span #{fourColumnText}
-              <!--[if (gte mso 9)|(IE)]>
-              </td><td width="150" valign="top">
-              <![endif]-->
-              table.column
-                tr
-                  td.inner
-                    table.contents
-                      tr
-                        td
-                          img(src="#{fourColumnImageSource}" width="130" alt="image")
-                      tr
-                        td.text 
-                        p.h2 1/4 Four Column
-                        span #{fourColumnText}
-              <!--[if (gte mso 9)|(IE)]>
-              </td>
-              </tr>
-              </table>
-              <![endif]-->
-          
-          //four column
-          tr
-            td.four-column
-              <!--[if (gte mso 9)|(IE)]>
-              <table width="100%">
-              <tr>
-              <td width="150" valign="top">
-              <![endif]-->
-              table.column
-                tr
-                  td.inner
-                    table.contents
-                      tr
-                        td
-                          img(src="#{fourColumnImageSource}" width="130" alt="image")
-                      tr
-                        td.text 
-                        p.h2 1/4 Four Column
-                        span #{fourColumnText}
-              <!--[if (gte mso 9)|(IE)]>
-              </td><td width="150" valign="top">
-              <![endif]-->
-              table.column
-                tr
-                  td.inner
-                    table.contents
-                      tr
-                        td
-                          img(src="#{fourColumnImageSource}" width="130" alt="image")
-                      tr
-                        td.text 
-                        p.h2 1/4 Four Column
-                        span #{fourColumnText}
-              <!--[if (gte mso 9)|(IE)]>
-              </td><td width="150" valign="top">
-              <![endif]-->
-              table.column
-                tr
-                  td.inner
-                    table.contents
-                      tr
-                        td
-                          img(src="#{fourColumnImageSource}" width="130" alt="image")
-                      tr
-                        td.text 
-                        p.h2 1/4 Four Column
-                        span #{fourColumnText}
-              <!--[if (gte mso 9)|(IE)]>
-              </td><td width="150" valign="top">
-              <![endif]-->
-              table.column
-                tr
-                  td.inner
-                    table.contents
-                      tr
-                        td
-                          img(src="#{fourColumnImageSource}" width="130" alt="image")
-                      tr
-                        td.text 
-                        p.h2 1/4 Four Column
-                        span #{fourColumnText}
-              <!--[if (gte mso 9)|(IE)]>
-              </td>
-              </tr>
-              </table>
-              <![endif]-->
+              <![endif]-->              

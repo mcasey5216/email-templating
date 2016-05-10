@@ -34,6 +34,13 @@
       img {
         border: 0;
       }
+      p {
+        Margin: 0;
+      }
+      a {
+        color: #951a1d;
+        text-decoration: none;
+      }
       .wrapper {
         width: 100%;
         table-layout: fixed;
@@ -64,17 +71,13 @@
       }
       .block {
         background-color:#ffffff;
-        padding:40px;
-      }
-      p {
-        Margin: 0;
-      }
-      a {
-        color: #951a1d;
-        text-decoration: none;
+        padding-top:40px;
+        padding-bottom:40px;
+        padding-left:40px;
+        padding-right:40px;
       }
       .contents .h1 {
-        font-size: 21px;
+        font-size: 24px;
         font-weight: bold;
         Margin-bottom: 18px;
       }
@@ -84,6 +87,7 @@
         Margin-bottom: 12px;
       }
 
+      /*Image layout*/
       .image {
         text-align:center;
       }
@@ -92,6 +96,7 @@
         padding-bottom: 10px;
       }
 
+      /*button layout*/
       .button {
         background-color: #951a1d;
         text-align: center;
@@ -125,31 +130,6 @@
         Margin-bottom: 10px;
       }
 
-      /*Two column layout*/
-      .two-column {
-        text-align: left;
-        font-size: 0;
-      }
-
-      .two-column .contents {
-        font-size: 14px;
-        text-align: left;
-      }
-      .two-column .column-50 {
-        width: 100%;
-        max-width: 300px;
-        display: inline-block;
-        vertical-align: top;
-      }
-      .two-column img {
-        width: 100%;
-        max-width: 280px;
-        height: auto;
-      }
-      .two-column .text {
-        padding-top: 10px;
-      }
-
       /*Nested layout*/
       .nested {
         text-align: left;
@@ -173,10 +153,56 @@
       }
       .nested .column-75 {
         width: 100%;
-        max-width: 450px;
+        max-width: 440px;
         display: inline-block;
         vertical-align: top;
       }
+      .inner-nested {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 30px;
+        padding-right: 10px;
+      }
+
+      /* social media */
+      .one-column .social {
+        text-align: center;
+      }
+      .social {
+        padding-top: 0;
+        padding-bottom: 0;
+      }
+      .social p {
+        display: inline-block;
+      }
+      .social-button {
+        text-align: center;
+        vertical-align: middle;
+        width: 155px;
+        padding-top: 15px;
+        padding-bottom: 12px;
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+      .social-button a {
+        color: #ffffff;
+        font-size:14px;
+      }
+      .social-button img {
+        width:15px;
+        padding-right:10px;
+      }
+      .facebook {
+        background-color:#3b5998;
+      }
+      .twitter {
+        background-color:#4099ff;
+      }
+      .tumblr {
+        background-color:#36465d;
+      }
+
+      /*footer layouts*/
       .footer {
         background-color: #f3f3f3;
       }
@@ -200,16 +226,16 @@
               <!--[if (gte mso 9)|(IE)]>
               <table width="100%">
               <tr>
-              <td width="75%" valign="top">
+              <td width="70%" valign="top">
               <![endif]-->
               <div class="column-75">
                 <table width="100%">
                   <tr>
-                    <td class="inner">
+                    <td class="inner-nested">
                       <table class="contents">
                         <tr>
                           <td class="nested-text">
-                            A nested subject line
+                            Ahava Leibtag, in the All You Can Learn Library
                           </td>
                         </tr>
                       </table>
@@ -223,7 +249,7 @@
               <div class="column-25">
                 <table width="100%">
                   <tr>
-                    <td class="inner">
+                    <td class="inner-nested">
                       <table class="contents">
                         <tr>
                           <td class="nested-text">
@@ -261,37 +287,60 @@
                 <tr>
                   <td class="inner contents">
                     <div class="block">
-                      <p class="h1">New in the All You Can Learn Library:</p>
-                      <p>Aaron Gustafson takes a fresh look at forms and shows us how we can create effective, first-rate experiences. We’ll get to the core purpose of forms and discuss ways to make it easier to build them, and for people to complete them.</p>
+                      <!-- <p class="h1">New in the All You Can Learn&nbsp;Library:</p>
+                      <p class="h2"><a href="https://aycl.uie.com/virtual_seminars/content_strategy_conversations">Navigating Challenging Content Strategy&nbsp;Conversations</a></p>
+                      <p>
+                      <p>Ahava Leibtag shares an approach for creating the right environment to give critical feedback without putting people on the&nbsp;defensive.</p>
                       <p class="spacer">
                         <br><hr><br>
                       </p>
                       <p class="image">
-                        <a href="https://aycl.uie.com/virtual_seminars/watch/features_of_highly_effective_forms/5768"><img src="http://asset.uie.com/emails/img/aaron-gustafson-video.jpg" wdith="400" alt=""></a>
+                        <a href="https://aycl.uie.com/virtual_seminars/content_strategy_conversations"><img src="http://asset.uie.com/emails/img/ahava-slide.png" width="400" alt="Ahava First Slide"></a>
                       </p>
-                      <p class="h1"><a href="https://aycl.uie.com/virtual_seminars/features_of_highly_effective_forms">Features of Highly Effective&nbsp;Forms</a></p>
                       <p>
-                        In this seminar, Aaron will:
+                        In this seminar, Ahava will explain how&nbsp;to:
                       </p>
                       <ul>
                         <li>
-                          Share stories from companies like Facebook, who have experimented, tested, and adjusted their forms to respond to the needs of customers.
+                          Create a model for delivering feedback that builds team and client&nbsp;relationships
                         </li>
                         <li>
-                          Provide best practices to make forms more usable and successful.
+                          Help clients articulate critical&nbsp;feedback
+                        </li>
+                        <li>
+                          Learn what feedback is valuable to your practice, and what&nbsp;isn&rsquo;t
                         </li>
                       </ul>
                       <p class="button">
-                        <a href="https://aycl.uie.com/virtual_seminars/watch/features_of_highly_effective_forms/5768">
-                          Watch This &gt;&gt;
+                        <a href="https://aycl.uie.com/virtual_seminars/content_strategy_conversations">
+                          Watch This
                         </a>
                       </p>
                       <p class="spacer">
                         <br><hr><br>
                       </p>
-                      <p>Subscribe to the All You Can Learn Library for $23/month or get access to just this recording for only $16.</p>
-
+                      <p><a href="https://aycl.uie.com/virtual_seminars/subscribe/nav">Subscribe</a> to the All You Can Learn Library for $23/month or get access to just this recording for&nbsp;only $16.</p> -->
                     </div>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="one-column">
+              <table width="100%">
+                <tr>
+                  <td class="inner contents footer social">
+                    <p class="social-button facebook">
+                      <img src="http://asset.uie.com/emails/img/social_media/fb.jpg" alt=""><a href="">Like&nbsp;on&nbsp;Facebook</a>
+                    </p>
+                    <p class="social-button twitter">
+                      <img src="http://asset.uie.com/emails/img/social_media/twitter.jpg" alt=""><a href="">Follow&nbsp;on&nbsp;Twitter</a>
+                    </p>
+                    <p class="social-button tumblr">
+                      <img src="http://asset.uie.com/emails/img/social_media/tumblr.jpg" alt=""><a href="">Follow&nbsp;on&nbsp;Tumblr</a>
+                    </p>
                   </td>
                 </tr>
               </table>

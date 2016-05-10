@@ -2,6 +2,83 @@
 
 note: some of this content is specific to the needs and application of UIE.
 
+## Understanding Emails
+
+![email clients](/images/demystifying-email-rendering.png)
+Graphic of different email clients. ([source](http://webdesign.tutsplus.com/tutorials/what-you-should-know-about-html-email--webdesign-12908))
+
+But these are the most common
+
+Mobile clients
+- Android 2.3 & 4.0
+- iPhone 5  iOS 6
+- iPhone 4S  iOS 6
+- iPhone 3GS  iOS 5
+- iPad 2  iOS 6
+- BlackBerry OS 4 & 5
+- Symbian S60
+- Windows Phone 7.5
+
+Desktop clients
+- Apple Mail 4, 5, 6
+- Lotus Notes 8.5
+- Lotus Notes 8
+- Thunderbird
+- Windows Live Mail
+- Outlook 2013
+- Outlook 2011 for Mac
+- Outlook 2010
+- Outlook 2007
+- Outlook 2003
+- Outlook 2002/XP
+- Outlook 2000
+
+Webmail clients
+- AOL Mail (on any browser)
+- Gmail (on any browser)
+- Outlook.com (on any browser)
+- Yahoo! (on any browser)
+
+### Standard Practices
+
+ All emails must start as such
+
+       <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+      <html xmlns="http://www.w3.org/1999/xhtml">
+      <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <title></title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      </head>
+
+This sets the stage for the email templates.  A detailed description of why can be found [here](http://webdesign.tutsplus.com/tutorials/what-you-should-know-about-html-email--webdesign-12908).
+
+The `div`, `section`, and `article` tags are not supported in any reliable way.  Email templates should be built in nested tables since the `colspan` and `rowspan` attributes are not consistently supported.
+
+Be careful with the inlining process.  Be sure to test every new email extensively, and run some preliminary checks on existing templates.
+
+Some clients will strip certain tags, such as `h1`, `h2`, and `h3` (as well as `p` tags in some cases), so h tags are formatted as such: `<p class="h1"> ... </p>`.  When possible, simply skip the p tag altogether. Example
+
+      <tr>
+        <td style=“font-size: 12px; font-family: Arial, sans-serif; color: #666666;”>
+          Text
+        </td>
+      </tr>
+
+You can not use shorthand `CSS` styles for things like `border`, `font`, or `padding`.  
+
+      table {
+        padding: 10px 20px 10px;
+      }
+
+becomes:
+
+      table {
+        padding-top: 10px
+        padding-bottom: 10px
+        padding-right: 20px
+        padding-left: 20px
+      }
 ## Original Objectives
 
 - Make a general template that is easy to reuse and responsive
@@ -36,23 +113,6 @@ Find an alternative to plain `HTML` that is still easy to convert back once its 
 - Reading/compiling Markdown
 
 It has the potential to make the code easily reusable, and less prone to mistakes/bugs.
-
-### Step 3 - Practice Implementation
-
-Styles are stored in variables, common variables like colors can be stored individually.
-
-    - var textColor = "#333333"
-    - var table = "border-spacing:0;font-family:sans-serif;color:" + textColor + ";"
-    - var contents = "width:100%;font-size:14px;text-align:left;"
-
-Also multiple variables can be added to the style attribute as if adding multiple classes.  Here is a snippet of how the code lays out.
-
-    tr
-      td(style="#{tenpxPadding}")
-        table(style="#{table}#{contents}")
-
-The benefit is that there is no external inliner program needed to provide the inline `CSS` format necessary to send a viable `HTML` email, yet you still get the convenience of a stylesheet.
-
 
 ## Possible Phases
 

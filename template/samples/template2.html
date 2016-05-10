@@ -21,18 +21,25 @@
         Margin: 0;
         padding: 0;
         min-width: 100%;
-        background-color: #ffffff;
       }
       table {
         border-spacing: 0;
         font-family: sans-serif;
         color: #333333;
+        background-color: #efefef;
       }
       td {
         padding: 0;
       }
       img {
         border: 0;
+      }
+      p {
+        Margin: 0;
+      }
+      a {
+        color: blue;
+        text-decoration: none;
       }
       .wrapper {
         width: 100%;
@@ -54,18 +61,22 @@
         height: auto;
       }
       .inner {
-        padding: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
       }
       .contents {
         width: 100%;
       }
-      p {
-        Margin: 0;
+      .block {
+        background-color:#ffffff;
+        padding: 30px;
       }
-      a {
-        color: blue;
-        text-decoration: none;
+      .image {
+        padding-bottom:30px;
       }
+
       .contents .h1 {
         font-size: 21px;
         font-weight: bold;
@@ -90,14 +101,25 @@
       .two-column {
         text-align: left;
         font-size: 0;
+        background-color:#ffffff;
       }
       .two-column .contents {
         font-size: 14px;
         text-align: left;
       }
+      .two-column .inner {
+        padding:0px;
+      }
+
       .two-column .column-50 {
         width: 100%;
         max-width: 300px;
+        display: inline-block;
+        vertical-align: top;
+      }
+      .two-column .column-50-other {
+        width: 100%;
+        max-width: 290px;
         display: inline-block;
         vertical-align: top;
       }
@@ -195,56 +217,33 @@
       .three-column .text {
         padding-top: 10px;
       }
-      /*four column layout*/
-      .four-column {
+      /*nested layout*/
+      .nested .contents {
+        font-size: 14px;
         text-align: left;
-        font-size: 0;
-        padding-top: 10px;
-        padding-bottom: 10px;
       }
-      .four-column .column {
+      .nested .nested-text {
+        padding-top: 10px;
+        font-size: 12px;
+        color: #999;
+      }
+      .nested .column-25 {
         width: 100%;
         max-width: 150px;
         display: inline-block;
         vertical-align: top;
       }
-      .four-column .contents {
-        font-size: 14px;
-        text-align: left;
-      }
-      .four-column img {
+      .nested .column-75 {
         width: 100%;
-        max-width: 130px;
-        height: auto;
-      }
-      .four-column .text {
-        padding-top: 10px;
-      }
-
-      /*five column layout*/
-      .five-column {
-        text-align: left;
-        font-size: 0;
-        padding-top: 10px;
-        padding-bottom: 10px;
-      }
-      .five-column .column {
-        width: 100%;
-        max-width: 120px;
+        max-width: 440px;
         display: inline-block;
         vertical-align: top;
       }
-      .five-column .contents {
-        font-size: 14px;
-        text-align: left;
-      }
-      .five-column img {
-        width: 100%;
-        max-width: 100px;
-        height: auto;
-      }
-      .five-column .text {
+      .inner-nested {
         padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 30px;
+        padding-right: 10px;
       }
       /*footer layout*/
       .footer {
@@ -329,8 +328,10 @@
               <table width="100%">
                 <tr>
                   <td class="inner contents">
-                    <p class="h1">100% Width Text</p>
-                    <p>Maecenas sed ante pellentesque, posuere leo id, eleifend dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent laoreet malesuada cursus. Maecenas scelerisque congue eros eu posuere. Praesent in felis ut velit pretium lobortis rhoncus ut erat.</p>
+                    <div class="block">
+                      <p class="h1">100% Width Text</p>
+                      <p>Maecenas sed ante pellentesque, posuere leo id, eleifend dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent laoreet malesuada cursus. Maecenas scelerisque congue eros eu posuere. Praesent in felis ut velit pretium lobortis rhoncus ut erat.</p>
+                    </div>
                   </td>
                 </tr>
               </table>
@@ -350,18 +351,16 @@
                     <td class="inner">
                       <table class="contents">
                         <tr>
-                          <td>
-                            <img src="http://asset.uie.com/emails/img/sample_images/doggy.jpg" width="280" alt="image" />
-                          </td>
-                        </tr>
-                        <tr>
                           <td class="text">
-                            <p class="h2">
-                              1/2 Two-Column
-                            </p>
-                            <p class="copy">
-                              Maecenas sed ante pellentesque, posuere leo id, eleifend dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
-                            </p>
+                            <div class="block">
+                              <img src="http://asset.uie.com/emails/img/sample_images/doggy.jpg" width="280" alt="image" class="image"/>
+                              <p class="h2">
+                                1/2 Two-Column
+                              </p>
+                              <p class="copy">
+                                Maecenas sed ante pellentesque, posuere leo id, eleifend dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                              </p>
+                            </div>
                           </td>
                         </tr>
                       </table>
@@ -378,18 +377,16 @@
                     <td class="inner">
                       <table class="contents">
                         <tr>
-                          <td>
-                            <img src="http://asset.uie.com/emails/img/sample_images/doggy.jpg" width="280" alt="image" />
-                          </td>
-                        </tr>
-                        <tr>
                           <td class="text">
-                            <p class="h2">
-                              1/2 Two-Column
-                            </p>
-                            <p class="copy">
-                              Maecenas sed ante pellentesque, posuere leo id, eleifend dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
-                            </p>
+                            <div class="block">
+                              <img src="http://asset.uie.com/emails/img/sample_images/doggy.jpg" width="280" alt="image" class="image"/>
+                              <p class="h2">
+                                1/2 Two-Column
+                              </p>
+                              <p class="copy">
+                                Maecenas sed ante pellentesque, posuere leo id, eleifend dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                              </p>
+                            </div>
                           </td>
                         </tr>
                       </table>
@@ -426,9 +423,7 @@
                           <p class="h2">
                             1/3 Three-Column
                           </p>
-                          <p class="copy">
-                            Scelerisque congue eros eu posuere. Praesent in felis ut velit pretium lobortis rhoncus ut erat.
-                          </p>
+                          Scelerisque congue eros eu posuere. Praesent in felis ut velit pretium lobortis rhoncus ut erat.
                         </td>
                       </tr>
                     </table>
@@ -452,9 +447,7 @@
                           <p class="h2">
                             1/3 Three-Column
                           </p>
-                          <p class="copy">
-                            Scelerisque congue eros eu posuere. Praesent in felis ut velit pretium lobortis rhoncus ut erat.
-                          </p>
+                          Scelerisque congue eros eu posuere. Praesent in felis ut velit pretium lobortis rhoncus ut erat.
                         </td>
                       </tr>
                     </table>
@@ -478,116 +471,6 @@
                           <p class="h2">
                             1/3 Three-Column
                           </p>
-                          <p class="copy">
-                            Scelerisque congue eros eu posuere. Praesent in felis ut velit pretium lobortis rhoncus ut erat.
-                          </p>
-                        </td>
-                      </tr>
-                    </table>
-                  </td>
-                </tr>
-              </table>
-              <!--[if (gte mso 9)|(IE)]>
-              </td>
-              </tr>
-              </table>
-              <![endif]-->
-            </td>
-          </tr>
-
-          <tr>
-            <td class="four-column">
-              <!--[if (gte mso 9)|(IE)]>
-              <table width="100%">
-              <tr>
-              <td width="150" valign="top">
-              <![endif]-->
-              <table class="column">
-                <tr>
-                  <td class="inner">
-                    <table class="contents">
-                      <tr>
-                        <td>
-                          <img src="http://asset.uie.com/emails/img/sample_images/piggy.jpg" width="130" alt="image" />
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="text">
-                          <p class="h2">
-                            1/4 Four-Column
-                          </p>
-                          Scelerisque congue eros eu posuere. Praesent in felis ut velit pretium lobortis rhoncus ut erat.
-                        </td>
-                      </tr>
-                    </table>
-                  </td>
-                </tr>
-              </table>
-              <!--[if (gte mso 9)|(IE)]>
-              </td><td width="150" valign="top">
-              <![endif]-->
-              <table class="column">
-                <tr>
-                  <td class="inner">
-                    <table class="contents">
-                      <tr>
-                        <td>
-                          <img src="http://asset.uie.com/emails/img/sample_images/piggy.jpg" width="130" alt="image" />
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="text">
-                          <p class="h2">
-                            1/4 Four-Column
-                          </p>
-                          Scelerisque congue eros eu posuere. Praesent in felis ut velit pretium lobortis rhoncus ut erat.
-                        </td>
-                      </tr>
-                    </table>
-                  </td>
-                </tr>
-              </table>
-              <!--[if (gte mso 9)|(IE)]>
-              </td><td width="150" valign="top">
-              <![endif]-->
-              <table class="column">
-                <tr>
-                  <td class="inner">
-                    <table class="contents">
-                      <tr>
-                        <td>
-                          <img src="http://asset.uie.com/emails/img/sample_images/piggy.jpg" width="130" alt="image" />
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="text">
-                          <p class="h2">
-                            1/4 Four-Column
-                          </p>
-                          Scelerisque congue eros eu posuere. Praesent in felis ut velit pretium lobortis rhoncus ut erat.
-                        </td>
-                      </tr>
-                    </table>
-                  </td>
-                </tr>
-              </table>
-              <!--[if (gte mso 9)|(IE)]>
-              </td><td width="150" valign="top">
-              <![endif]-->
-              <table class="column">
-                <tr>
-                  <td class="inner">
-                    <table class="contents">
-                      <tr>
-                        <td>
-                          <img src="http://asset.uie.com/emails/img/sample_images/piggy.jpg" width="130" alt="image" />
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="text">
-                          <p class="h2">
-                            1/4 Four-Column
-                          </p>
                           Scelerisque congue eros eu posuere. Praesent in felis ut velit pretium lobortis rhoncus ut erat.
                         </td>
                       </tr>
@@ -604,136 +487,6 @@
           </tr>
 
           <tr>
-            <td class="five-column">
-              <!--[if (gte mso 9)|(IE)]>
-              <table width="100%">
-              <tr>
-              <td width="120" valign="top">
-              <![endif]-->
-              <table class="column">
-                <tr>
-                  <td class="inner">
-                    <table class="contents">
-                      <tr>
-                        <td>
-                          <img src="http://asset.uie.com/emails/img/sample_images/ducky.jpg" width="100" alt="image" />
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="text">
-                          <p class="h2">
-                            1/5 Five-Column
-                          </p>
-                          Scelerisque congue eros eu posuere. Praesent in felis ut velit pretium lobortis rhoncus ut erat.
-                        </td>
-                      </tr>
-                    </table>
-                  </td>
-                </tr>
-              </table>
-              <!--[if (gte mso 9)|(IE)]>
-              </td><td width="120" valign="top">
-              <![endif]-->
-              <table class="column">
-                <tr>
-                  <td class="inner">
-                    <table class="contents">
-                      <tr>
-                        <td>
-                          <img src="http://asset.uie.com/emails/img/sample_images/ducky.jpg" width="100" alt="image" />
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="text">
-                          <p class="h2">
-                            1/5 Five-Column
-                          </p>
-                          Scelerisque congue eros eu posuere. Praesent in felis ut velit pretium lobortis rhoncus ut erat.
-                        </td>
-                      </tr>
-                    </table>
-                  </td>
-                </tr>
-              </table>
-              <!--[if (gte mso 9)|(IE)]>
-              </td><td width="120" valign="top">
-              <![endif]-->
-              <table class="column">
-                <tr>
-                  <td class="inner">
-                    <table class="contents">
-                      <tr>
-                        <td>
-                          <img src="http://asset.uie.com/emails/img/sample_images/ducky.jpg" width="100" alt="image" />
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="text">
-                          <p class="h2">
-                            1/5 Five-Column
-                          </p>
-                          Scelerisque congue eros eu posuere. Praesent in felis ut velit pretium lobortis rhoncus ut erat.
-                        </td>
-                      </tr>
-                    </table>
-                  </td>
-                </tr>
-              </table>
-              <!--[if (gte mso 9)|(IE)]>
-              </td><td width="120" valign="top">
-              <![endif]-->
-              <table class="column">
-                <tr>
-                  <td class="inner">
-                    <table class="contents">
-                      <tr>
-                        <td>
-                          <img src="http://asset.uie.com/emails/img/sample_images/ducky.jpg" width="100" alt="image" />
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="text">
-                          <p class="h2">
-                            1/5 Five-Column
-                          </p>
-                          Scelerisque congue eros eu posuere. Praesent in felis ut velit pretium lobortis rhoncus ut erat.
-                        </td>
-                      </tr>
-                    </table>
-                  </td>
-                </tr>
-              </table>
-              <!--[if (gte mso 9)|(IE)]>
-              </td><td width="120" valign="top">
-              <![endif]-->
-              <table class="column">
-                <tr>
-                  <td class="inner">
-                    <table class="contents">
-                      <tr>
-                        <td>
-                          <img src="http://asset.uie.com/emails/img/sample_images/ducky.jpg" width="100" alt="image" />
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="text">
-                          <p class="h2">
-                            1/5 Five-Column
-                          </p>
-                          Scelerisque congue eros eu posuere. Praesent in felis ut velit pretium lobortis rhoncus ut erat.
-                        </td>
-                      </tr>
-                    </table>
-                  </td>
-                </tr>
-              </table>
-              <!--[if (gte mso 9)|(IE)]>
-              </td>
-              </tr>
-              </table>
-              <![endif]-->
-            </td>
-          </tr>
 
           <tr>
             <td class="multi-column">

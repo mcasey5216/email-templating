@@ -38,19 +38,22 @@ img {
 .inner {
   padding: 10px;
 }
+.contents {
+  width: 100%;
+}
 p {
   Margin: 0;
 }
 a {
-  color: #ee6a56;
+  color: blue;
   text-decoration: none;
 }
-.h1 {
+.contents .h1 {
   font-size: 21px;
   font-weight: bold;
   Margin-bottom: 18px;
 }
-.h2 {
+.contents .h2 {
   font-size: 18px;
   font-weight: bold;
   Margin-bottom: 12px;
@@ -67,11 +70,8 @@ a {
 
 /*Two column layout*/
 .two-column {
-  text-align: center;
+  text-align: left;
   font-size: 0;
-}
-.contents {
-  width: 100%;
 }
 .two-column .contents {
   font-size: 14px;
@@ -93,7 +93,7 @@ a {
 }
 /*Multi-column layout*/
 .multi-column {
-  text-align: center;
+  text-align: left;
   font-size: 0;
 }
 .multi-column .column-40 {
@@ -154,7 +154,7 @@ a {
 }
 /*Three column layout*/
 .three-column {
-  text-align: center;
+  text-align: left;
   font-size: 0;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -167,7 +167,7 @@ a {
 }
 .three-column .contents {
   font-size: 14px;
-  text-align: center;
+  text-align: left;
 }
 .three-column img {
   width: 100%;
@@ -179,7 +179,7 @@ a {
 }
 /*four column layout*/
 .four-column {
-  text-align: center;
+  text-align: left;
   font-size: 0;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -192,7 +192,7 @@ a {
 }
 .four-column .contents {
   font-size: 14px;
-  text-align: center;
+  text-align: left;
 }
 .four-column img {
   width: 100%;
@@ -205,7 +205,7 @@ a {
 
 /*five column layout*/
 .five-column {
-  text-align: center;
+  text-align: left;
   font-size: 0;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -218,7 +218,7 @@ a {
 }
 .five-column .contents {
   font-size: 14px;
-  text-align: center;
+  text-align: left;
 }
 .five-column img {
   width: 100%;
@@ -227,4 +227,39 @@ a {
 }
 .five-column .text {
   padding-top: 10px;
+}
+/*footer layout*/
+.footer {
+  background-color: #f3f3f3;
+}
+.footer p {
+  font-size:11px;
+}
+/*nested layout*/
+.nested .contents {
+  font-size: 14px;
+  text-align: left;
+}
+.nested .nested-text {
+  padding-top: 10px;
+  font-size: 12px;
+  color: #999;
+}
+.nested .column-25 {
+  width: 100%;
+  max-width: 150px;
+  display: inline-block;
+  vertical-align: top;
+}
+.nested .column-75 {
+  width: 100%;
+  max-width: 440px;
+  display: inline-block;
+  vertical-align: top;
+}
+.inner-nested {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 30px;
+  padding-right: 10px;
 }
