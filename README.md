@@ -41,7 +41,9 @@ Webmail clients
 
 ### Standard Practices
 
- All emails must start as such
+Some email clients, like the Gmail app, will not read media queries.  Furthermore, some email clients will strip style tags, so we will work with a fluid layout.  Some sacrifices in design are made, but ultimately it is the best way to reach all of our subscribers.  Styles must ultimately be inlined, but MailChimp will do it for you.
+
+All emails must start as such:
 
        <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
       <html xmlns="http://www.w3.org/1999/xhtml">
@@ -53,7 +55,7 @@ Webmail clients
 
 This sets the stage for the email templates.  A detailed description of why can be found [here](http://webdesign.tutsplus.com/tutorials/what-you-should-know-about-html-email--webdesign-12908).
 
-The `div`, `section`, and `article` tags are not supported in any reliable way.  Email templates should be built in nested tables since the `colspan` and `rowspan` attributes are not consistently supported.
+The `div`, `section`, and `article` tags are not supported in any reliable way.  Email templates should be built in nested tables since the `colspan` and `rowspan` attributes are not consistently supported. Your largest table should be no more than 600px wide.  It is the best number to ensure your users will not have to scroll horizontally.
 
 Be careful with the inlining process.  Be sure to test every new email extensively, and run some preliminary checks on existing templates.
 
@@ -79,6 +81,25 @@ becomes:
         padding-right: 20px
         padding-left: 20px
       }
+
+When setting width or heght attributes, make sure to set it in the `CSS` and as an attribute on the actual tag.
+
+      // CSS
+      img {
+        width: 400px;
+      }
+
+    // HTML
+      <img src="path/to/image.jpg" width="400" />
+
+Many email clients turn off images by default.  Never uses an image that has crucial information in it, and always give it an `alt` attribute.  Lengthy alt text can result in it not displaying properly.  [This article](https://www.campaignmonitor.com/dev-resources/will-it-work/alt/) explains some of issues and details related to image alt text.  Alt Text can and should be styled, but there is no once size fits all solution to broken alt text, so be mindful of it's length and test its appearance.  I suggest turning images off as a default in your own email as a way to check when you send yourself tests.
+
+Always link your images, including headers.
+
+Background images are not suggested, but [here is a link](https://backgrounds.cm/) to a supposedly bulletproof way of handling it.
+
+
+
 ## Original Objectives
 
 - Make a general template that is easy to reuse and responsive
